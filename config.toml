@@ -2,4 +2,4 @@ baseURL = "https://pozitive.tech"
 languageCode = "en-us"
 title = "pozitive technologies 2019 | Poznań"
 enableRobotsTXT = true
-disableRSS = true
+disableKinds = ["RSS"]
