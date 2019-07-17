@@ -24,5 +24,5 @@ docker run -it --rm -p 1313:1313 -v ${PWD}:/srv/hugo hugo -s ./
 echo "Updating gh-pages branch"
 cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
 
-echo "Pushing to github"
-git push origin gh-pages
+#echo "Pushing to github"
+#git push origin gh-pages
