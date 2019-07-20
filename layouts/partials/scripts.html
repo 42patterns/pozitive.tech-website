@@ -1,0 +1,66 @@
+<script src="/vendor/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="/vendor/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="/vendor/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+<script>
+$(document).ready(function () {
+    if ($(window).scrollTop() >= 100) {
+        $('#top-header').addClass('after-scroll');
+        $('#logo-header .logo').removeClass('logo-light').addClass('logo-dark');
+    }
+
+    $(window).scroll(function () {
+        var scroll = $(this).scrollTop();
+        var header = $('#top-header');
+        var logo = $('#logo-header .logo');
+        var buyButton = $('#register-btn');
+        var topOffset = header.height() + $('.track-header').height();
+
+        if (scroll >= 100) {
+            header.addClass('after-scroll');
+            logo.removeClass('d-none').addClass('logo-dark');
+            buyButton.removeClass('btn-light').addClass('btn-dark');
+        } else {
+            header.removeClass('after-scroll');
+            logo.removeClass('logo-dark').addClass('d-none');
+            buyButton.removeClass('btn-dark').addClass('btn-light');
+        }
+
+        if (scroll >= $('.top-section').height() && $(window).width() > 767) {
+            buyButton.removeClass('right-nav-button-hidden');
+        } else if (scroll < $('.top-section').height() && $(window).width() > 767) {
+            buyButton.addClass('right-nav-button-hidden');
+        }
+    });
+
+    $(window).resize(function () {
+        if ($(window).height() < 512) {
+            $('.st-menu').addClass('scrollable');
+        } else {
+            $('.st-menu').removeClass('scrollable');
+        }
+    });
+
+    //Side menu
+    var container = $('.st-container');
+    $('#menu-trigger').click(function (event) {
+        event.stopPropagation();
+        container.toggleClass('st-menu-open');
+    });
+    $('.st-pusher').click(function () {
+        if (container.hasClass('st-menu-open')) {
+            container.removeClass('st-menu-open');
+        }
+    });
+
+    $("#arrow-down").click(function (e) {
+        $("body").animate({
+            scrollTop: $("#speakers").offset().top
+        }, "slow");
+    });
+});
+</script>
