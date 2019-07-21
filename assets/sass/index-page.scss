@@ -1,4 +1,4 @@
-.hero__section {
+.hero__index_section {
     
     color: $color-secondary;
     
@@ -77,7 +77,7 @@
     }
 }
 
-.speakers__section {
+.speakers__index_section {
     & {
         @extend %base-section;
         background-color: $color-secondary;
@@ -109,7 +109,7 @@
     }
 }
 
-.registration__section {
+.registration__index_section {
 
     & {
         @extend %base-section;        
@@ -170,7 +170,7 @@
     }
 }
 
-.location__section {
+.location__index_section {
     & {
         @extend %base-section;
         background-color: $color-main;
@@ -203,7 +203,7 @@
     }
 }
 
-.partners__section {
+.partners__index_section {
 
     & {
         @extend %base-section;

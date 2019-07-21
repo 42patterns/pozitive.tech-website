@@ -10,38 +10,8 @@
             <div class="st-pusher">
                 <div class="st-content">
 
-                    <section id="hero" class="hero__section">
-                        <header id="top-header" class="top-header">
-                            <div class="overlay white-solid"></div>
-                            <div id="menu-trigger" class="menu-trigger icon icon-menu d-md-none">
-                                &#8801;
-                            </div>
-                            <a href="/" id="logo-header" class="logo-header">
-                                <div class="logo d-none"></div>
-                            </a>
-                            <nav class="st-menu st-effect" id="menu">
-                                <div class="logo-navbar logo logo-dark d-md-none"></div>
-                                <ul>
-                                    <li>
-                                        <a class="" href="#speakers">speakers</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#location">location</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#partners">partners</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#footer">contact</a>
-                                    </li>
-                                    <li>
-                                        <a href="#registration" id="register-btn" class="btn btn-light">
-                                            Get tickets!
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </header>
+                    <section id="hero" class="hero__index_section">
+                        {{ partial "navigation.html" . }}
 
                         <div class="hero-content h-100 d-flex flex-column">
                             <div class="logo">
@@ -74,7 +44,7 @@
                         </div>
                     </section>
 
-                    <section id="speakers" class="speakers__section">
+                    <section id="speakers" class="speakers__index_section">
                         <div class="container text-center">
                             <h3>Speakers</h3>
                             <div class="d-none d-md-block col-md-8 offset-md-2">
@@ -90,7 +60,7 @@
                                 </div>
                                 <div class="speaker">
                                     <h4>Adam Dudczak</h4>
-                                    <img src="/images/speakers/adamdudczak.png">
+                                    <img src="/images/speakers/adam_dudczak.png">
                                     <h5>#machinelearning #ai</h5>
                                 </div>
                                 <div class="speaker">
@@ -105,7 +75,7 @@
                         </div>
                     </section>
 
-                    <section id="registration" class="registration__section">
+                    <section id="registration" class="registration__index_section">
                         <div class="container text-center">
                             <h3>Registration</h3>
 
@@ -143,7 +113,7 @@
                         </div>
                     </section>
 
-                    <section id="location" class="location__section">
+                    <section id="location" class="location__index_section">
                         <div class="container">
                             <div class="pb-3 text-center">
                                 <h3>Location</h3>
@@ -172,7 +142,7 @@
                         </div>
                     </section>
 
-                    <section id="partners" class="partners__section">
+                    <section id="partners" class="partners__index_section">
                         <div class="container text-center">
                             <div class="main">
                                 <h3>Main organizer</h3>
