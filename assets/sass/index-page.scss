@@ -1,0 +1,246 @@
+.hero__section {
+    
+    color: $color-secondary;
+    
+    & {
+        height: 100%;         
+        background-color: $color-main;
+        background-image: url('/images/pozitive-key-visual.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;    
+    }
+
+    .hero-content {
+        padding: 3rem;
+
+        @media (max-width : 767px) { 
+            padding: 1rem;
+        }        
+    }
+
+    .logo {
+        height: 85px;
+        width: 340px;
+
+        @media (max-width : 767px) { 
+            height: 60px;
+            width: 240px;    
+        }
+    }    
+
+    .date {
+        color: white;
+        font-weight: $font-bold;
+        font-size: 3.75em;
+
+        @media (max-width : 767px) { 
+            font-size: 2.75em;
+        }
+    }
+ 
+    .city {
+        font-weight: $font-extra-bold;
+        font-size: 6em;
+
+        @media (max-width : 767px) { 
+            font-size: 4em;
+        }
+    }
+    
+    .hashtag {
+        font-weight: $font-extra-bold;
+        font-size: 1.5em;
+
+        .arrow-down {
+            img {
+                filter: brightness(100);
+                width: 3rem;
+                height: 3rem;               
+            }
+
+            a {
+                position: 1313/absolute;
+                left: 50%;            
+                animation: callToAction 3.5s linear 0s infinite;
+
+                @media (max-width : 767px) { 
+                    margin-left: -40px;
+                    bottom: 50px;
+                }
+            }
+        }
+
+        @media (max-width : 767px) { 
+            font-size: 1em;
+        }
+    }
+}
+
+.speakers__section {
+    & {
+        @extend %base-section;
+        background-color: $color-secondary;
+    }
+
+    h3 {        
+        color: $color-main;
+    }
+
+    .speaker {
+        color: $color-main;
+        background-color: white;
+        margin: 0 1rem 1rem 1rem;
+        padding: 0.8rem 2rem 0.8rem 2rem;
+
+        h4 {
+            font-size: 1rem;
+        }
+
+        h5 {
+            font-size: 0.8rem;
+        }
+
+        img {
+            max-height: 250px;
+            max-width: 250px;                
+            padding-bottom: 0.5rem;
+        }
+    }
+}
+
+.registration__section {
+
+    & {
+        @extend %base-section;        
+        color: $color-secondary;
+    }    
+
+    .btn {
+        font-weight: $font-extra-bold;
+        background-color: $color-main;
+        border-color: $color-main;
+        text-transform: lowercase;
+    }
+
+    .ideas {
+        color: white;
+        background-color: $color-secondary; 
+        z-index: -1;
+
+        hr {
+            background-color: white;
+            margin-top: 0.2rem !important;
+        }
+
+        @media (min-width : 767px) { 
+            min-height: 25em;
+        }
+    }
+
+    .tickets {      
+
+        & {
+            background-color: $color-main;
+            background-image: url('/images/pozitive-key-visual.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            min-height: 25rem;  
+        }
+
+        .title {
+            color: white;
+            font-weight: $font-extra-bold;
+            font-size: 2rem;
+        }
+
+        .price {
+            font-weight: $font-extra-bold;
+            color: $color-secondary;
+            font-size: 5rem;
+        }
+
+        @media (min-width : 767px) { 
+            position: absolute;
+            left: 50%;
+            transform: translateY(-112%);
+            z-index: -1;
+        }         
+    }
+}
+
+.location__section {
+    & {
+        @extend %base-section;
+        background-color: $color-main;
+
+        @media (min-width : 767px) { 
+            min-height: 80%;
+        }        
+    }
+
+    .address {
+        background-color: $color-secondary;        
+
+        @media (min-width : 767px) { 
+            min-height: 25em;
+        }
+
+        .location {
+            font-size: 1.2rem; 
+        }
+    }
+
+    .map {
+        overflow: hidden;
+
+        @media (min-width : 767px) { 
+            position: absolute;
+            left: 50%;
+            transform: translateY(-72%);
+        }        
+    }
+}
+
+.partners__section {
+
+    & {
+        @extend %base-section;
+        padding-bottom: 10rem;
+    }
+
+    h3, h4 {
+        color: $color-main;
+        padding-top: 5rem;
+    }
+
+    img {    
+        margin: 0.6rem 2rem;
+        max-height: 100px;
+        max-width: 200px;            
+        -webkit-filter: grayscale(1); /* Safari 6.0 - 9.0 */
+        filter: grayscale(1);
+    }
+
+    img:hover {
+        filter: grayscale(0);
+    }
+
+    .gold {
+        img {
+            max-height: 120px;
+            max-width: 240px;
+        }
+    }
+
+    .main {
+        img {
+            max-height: 300px;
+            max-width: 600px;
+            @media (max-width : 767px) { 
+                max-width: 90%;
+            }            
+        }
+    }
+}

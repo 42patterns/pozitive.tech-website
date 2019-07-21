@@ -1,0 +1,43 @@
+.top-section {
+    position: relative;
+    min-height: 400px;
+    padding-top: 0;
+    background: #19a2a8;
+    @media (max-width: 767px) {
+        min-height: 200px;
+        padding: 0;
+    }
+    .gradient-overlay {
+        opacity: 0;
+    }
+    &.enable-overlay .gradient-overlay {
+        opacity: 1;
+    }
+
+    nav {
+        li {
+            a {
+                color: white;
+                .top-header.after-scroll & {
+                    color: $nav-scroll-color;
+                }            
+                &.btn {
+                    color: $color-secondary;
+                }    
+            }
+        }
+    }
+}
+.jumbotron {
+    padding: 300px 0 0 0;
+    color: #fff;
+    background: 0;
+    @media (max-width: 767px) {
+        padding-top: 130px;
+        padding-left: 15px;
+        padding-bottom: 5px;
+    }
+    @media screen and  (min-width: 768px) {
+        padding-bottom: 0;
+    }
+}

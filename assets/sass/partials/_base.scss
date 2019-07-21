@@ -1,0 +1,28 @@
+html, body {
+    height: 100vh;
+}
+
+body {    
+    color: white;
+    font-family: 'Roboto Mono', monospace;    
+}
+
+a {
+    color: $color-main;
+    text-decoration: underline;
+}
+
+%base-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    @media (max-width : 767px) { 
+        padding: 1rem;
+        padding-top: 3rem;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: $font-extra-bold;
+    text-transform: lowercase;
+}   
