@@ -4,15 +4,15 @@
 <section id="speakers" class="speakers__section">
     <div class="container text-center py-5">
         {{ range sort .Site.Data.sessions "track" "desc" "speakers.name"}}
-        <div class="row">
-            <div class="col-8 offset-2">
-                <div class="speaker row my-3">
-                    <div class="photo col-4 p-0 text-left">
+        <div class="row mx-auto">
+            <div class="col-12 col-md-8 offset-md-2">
+                <div class="speaker my-3 d-flex">
+                    <div class="photo mr-1 col-4 p-0 text-left">
                         <img src="{{ $baseUrl }}/images/{{ .speakers.photo }}">
                     </div>
-                    <div class="col-8 text-left px-4">
-                        <div class="description h-100 d-flex flex-column justify-content-center">
-                            <div class="name">
+                    <div class="description col-8 text-left">
+                        <div class="h-100 d-flex flex-column justify-content-center">
+                            <div class="name text-nowrap">
                                 <h4>{{ .speakers.name }}</h4>
                             </div>
                             <div class="bio">
@@ -23,7 +23,7 @@
                             <div class="session">
                                 <h5>{{ .title }}</h5>
                             </div>
-                            <div class="tags">
+                            <div class="tags text-nowrap overflow-hidden">
                                 {{ range .tags }}
                                 <span>#{{ . }}</span>
                                 {{ end }}

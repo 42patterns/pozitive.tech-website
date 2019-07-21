@@ -14,12 +14,23 @@
         }
 
         .description > div {
-            margin-bottom: 1em; 
+            padding-left: 0.5em;
+            background-color: white;
+            opacity: 0.8;
+
+            @media (min-width : 767px) { 
+                padding-left: 1.5em;
+                padding-right: 1em;    
+            }
+        }
+
+        .description > * > div {
+            margin-bottom: 1em;             
         }
 
         .bio {
             font-size: 0.7em;
-            color: #a8a8a8;            
+            color: #616161;            
         }
 
         .session {

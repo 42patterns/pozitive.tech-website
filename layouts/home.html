@@ -54,7 +54,7 @@
                             </div>
                             <div class="pt-5 d-flex flex-wrap align-items-center justify-content-center">
                             {{ $baseUrl := .Site.BaseURL }}
-                            {{ range sort .Site.Data.sessions "track" "desc" "speakers.name"}}
+                            {{ range first 3 (sort .Site.Data.sessions "track" "desc" "speakers.name") }}
                                 <div class="speaker">
                                     <h4>{{ .speakers.name }}</h4>
                                     <img src="{{ $baseUrl }}/images/{{ .speakers.photo }}">

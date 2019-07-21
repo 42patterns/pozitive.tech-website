@@ -1,0 +1,10 @@
+title = "Experiment, don't argue: or how I learned to stop worrying and love experimenting in production."
+language = "en"
+abstract = ""
+track = ""
+tags = ["microservices", "agile", "quality"]
+
+[speakers]
+name = "Willy Picard"
+bio = ""
+photo = "speakers/willy_picard.jpg"    
