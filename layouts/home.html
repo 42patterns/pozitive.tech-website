@@ -53,21 +53,14 @@
                                 better architecture, a better AI model.
                             </div>
                             <div class="pt-5 d-flex flex-wrap align-items-center justify-content-center">
+                            {{ $baseUrl := .Site.BaseURL }}
+                            {{ range sort .Site.Data.sessions "track" "desc" "speakers.name"}}
                                 <div class="speaker">
-                                    <h4>Jarosław Ratajski</h4>
-                                    <img src="/images/speakers/jaroslaw_ratajski.jpg">
-                                    <h5>#java #architecture</h5>
+                                    <h4>{{ .speakers.name }}</h4>
+                                    <img src="{{ $baseUrl }}/images/{{ .speakers.photo }}">
+                                    <h5>#{{ index .tags 0 }}</h5>
                                 </div>
-                                <div class="speaker">
-                                    <h4>Adam Dudczak</h4>
-                                    <img src="/images/speakers/adam_dudczak.png">
-                                    <h5>#machinelearning #ai</h5>
-                                </div>
-                                <div class="speaker">
-                                    <h4>Willy Picard</h4>
-                                    <img src="/images/speakers/willy_picard.jpg">
-                                    <h5>#architecture</h5>
-                                </div>
+                            {{ end }}
                             </div>
                             <div class="pt-3 col-md-4 offset-md-4">
                                 [more speakers to be announced]

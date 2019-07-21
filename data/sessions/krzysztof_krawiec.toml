@@ -1,0 +1,12 @@
+title = "Learning to Code: AI in Program Synthesis and Improvement"
+language = "en"
+abstract = "Programming consists in translating some form of user's intent into an executable computer program, and automating that process is known as program synthesis. A range of approaches to program synthesis have been proposed in the past, and recent progress in machine learning brought it much closer to practical applicability. In this talk, I will review selected approaches to program synthesis, with particular emphasis on recent developments, and discuss the implications both for AI as well as for the practice of software engineering."
+track = "keynote"
+tags = ["artifical intelligence", "keynote"]
+
+[speakers]
+name = "Krzysztof Krawiec"
+bio = """Krzysztof Krawiec is a Professor of Computer Science at Poznan University of Technology, Poland, where he serves as a Deputy Head for Science. His research areas include computer vision and program synthesis, with applications in medicine and software engineering.
+
+Prof. Krawiec is the author of over 100 publications on the above and related topics and an associate editor of Genetic Programming and Evolvable Machines. He received the Fulbright Senior Advanced Research Award and was a visiting professor at University of California and Massachusetts Institute of Technology."""
+photo = "speakers/krzysztof_krawiec.jpg"

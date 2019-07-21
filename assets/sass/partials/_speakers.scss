@@ -1,0 +1,47 @@
+.speakers__section {
+    color: $color-main;
+
+    .speaker {
+        border: 2px solid $color-main;
+
+        h1, h2, h3, h4, h5 {
+            text-transform: capitalize;
+        }
+    
+        img {
+            height: 250px;
+            width: 250px;                
+        }
+
+        .description > div {
+            margin-bottom: 1em; 
+        }
+
+        .bio {
+            font-size: 0.7em;
+            color: #a8a8a8;            
+        }
+
+        .session {
+            border: 1px solid $color-main;
+            padding-left: 0.6em;
+            padding-top: 0.3em;
+            padding-right: 0.3em;
+            padding-bottom: 0.3em;
+
+            h5 {
+                border-left: 2px solid $color-main;
+                color: $color-secondary;
+                font-size: 0.9em;
+                padding-left: 0.6em;
+                margin-bottom: 0;
+            }
+        }
+
+        .tags {
+            span {
+                font-size: 0.8em;
+            }
+        }
+    }
+}

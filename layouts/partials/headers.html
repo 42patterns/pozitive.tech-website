@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport"
     content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>{{- .Title | default .Site.Title -}}</title>
+<title>{{ with .Title }} {{ . }}  | {{ end }}{{- .Site.Title -}}</title>
 
 <meta name="author" content="pozitive technologies">
 <meta name="description" content="pozitive technologies 2019 | Poznań">

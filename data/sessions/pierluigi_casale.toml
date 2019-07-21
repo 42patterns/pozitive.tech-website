@@ -1,0 +1,10 @@
+title = "Data&AI in TomTom: How we are transforming mobility."
+language = "en"
+abstract = "Have you ever tried to cook? For preparing a good meal you need ingredients, cooking tools and a recipe. The same applies to data processing. In this talk I will show how TomTom is generating insights and products from the massive amount of data collected from devices in the real world."
+track = ""
+tags = ["data science" , "artifical intelligence"]
+
+[speakers]
+name = "Pierluigi Casale"
+bio = "Pierluigi Casale is the Group Data Scientist in TomTom. He holds a B.Sc. and M.Sc. in Electronics, M.Sc. in Computer vision and Artificial Intelligence and a Ph.D. in Applied Mathematics. His interests are related to IoT application with particular focus on Machine Learning and Data Science. He is lecturer of Data Science at the Jheronimous Academy of Data Science, ’s-Hertogenbosh, The Netherlands."
+photo = "speakers/pierluigi_casale.jpg"    

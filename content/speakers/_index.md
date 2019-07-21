@@ -1,5 +1,6 @@
 ---
-title: speakers | pozitive technologies 2019
+title: speakers
+heroImage: duotone-speakers.jpg
 ---
 
-<!-- tutaj kontekt speakerów -->
+<!-- tutaj kontent speakerów -->

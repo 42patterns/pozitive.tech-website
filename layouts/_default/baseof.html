@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {{ partial "headers.html" . }}
+    </head>
+
+    <body>
+        <div id="st-container" class="st-container disable-scrolling">
+            <div class="st-pusher">
+                <div class="st-content">
+
+                <!-- Begin Top Section -->
+                <section id="top-section" class="top-section image-section {{ with .Params.heroImage }}enable-overlay{{ end }}" 
+                    style="{{ if .Params.heroImage }}background-image: url('{{ .Site.BaseURL }}/images/sections-background/{{ .Params.heroImage }}'); {{ end }}">
+                    <div class="overlay white-overlay"></div>
+                    {{ partial "navigation.html" . }}
+
+                    <div class="container">
+                        <div class="jumbotron text-center">
+                            <!-- animated hiding -->
+                            <div class="" data-animation="fadeInLeft" data-delay="500">
+                                <h1>{{ .Title  }}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Top Section -->
+
+                {{ block "main" . }}
+                    {{ .Content }}
+                {{ end }}
+                
+                {{ partial "footer.html" . }}
+                </div>
+            </div>
+        </div>
+        {{ partial "scripts.html" . }}
+    </body>
+
+</html>
