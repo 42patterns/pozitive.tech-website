@@ -20,9 +20,11 @@
                                     {{ .speakers.bio | truncate 100 }}
                                 </span>
                             </div>    
+                            {{ with .title }}
                             <div class="session">
-                                <h5>{{ .title }}</h5>
+                                <h5>{{ . }}</h5>
                             </div>
+                            {{ end }}
                             <div class="tags text-nowrap overflow-hidden">
                                 {{ range .tags }}
                                 <span>#{{ . }}</span>
