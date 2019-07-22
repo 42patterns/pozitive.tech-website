@@ -1,0 +1,11 @@
+title = "Data as the foundation of a Smart City"
+language = "en"
+abstract = """Presentation will explore the idea of how to prepare city hall for the digital transition. Speech will focus on the importance of smart city strategy and cooperation with value creators."""
+track = ""
+tags = ["data science" , "smart city"]
+
+[speakers]
+name = "Michal Łakomski"
+company = "Municipality of Poznań"
+bio = "Graduated at the Adam Mickiewicz University in Poznan, Master of Science in Management,  Postgraduate Studies in Web and Mobile Applications. Deputy Director in the Organizational Department of Poznan City Hall. As Deputy Director, supervises the area of management systems, information services and information security.  Since October 2017, he is the Mayor's Proxy for Smart City."
+photo = "speakers/michal_lakomski.jpg"
