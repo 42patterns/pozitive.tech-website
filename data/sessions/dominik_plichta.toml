@@ -5,7 +5,7 @@ abstract = """Incremental data processing is a method of applying computations t
 This talk takes a look at design choices and looks at how certain data structures or patterns, such as the Kappa architecture, can help build incremental data processing systems.
 """
 track = ""
-tags = ["data science" , "artifical intelligence"]
+tags = ["architecture", "data"]
 
 [speakers]
 name = "Dominik Plichta"
