@@ -58,7 +58,7 @@
                                 <div class="speaker">
                                     <h4>{{ .speakers.name }}</h4>
                                     <img src="{{ $baseUrl }}/images/{{ .speakers.photo }}">
-                                    <h5>#{{ index .tags 0 }}</h5>
+                                    <h5>#{{ index .tags 0 | urlize }}</h5>
                                 </div>
                             {{ end }}
                             </div>

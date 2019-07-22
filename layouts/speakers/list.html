@@ -27,7 +27,7 @@
                             {{ end }}
                             <div class="tags text-nowrap overflow-hidden">
                                 {{ range .tags }}
-                                <span>#{{ . }}</span>
+                                <span>#{{ . | urlize }}</span>
                                 {{ end }}
                             </div>
                         </div>                        
