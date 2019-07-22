@@ -6,7 +6,7 @@
         {{ range sort .Site.Data.sessions "track" "desc" "speakers.name"}}
 
         <!-- generate speaker pages from template -->
-        {{ $filePath := printf "/session/%s.html" (.title | urlize) }}
+        {{ $filePath := printf "/sessions/%s.html" (.title | urlize) }}
         {{ $speaker_page := resources.Get "session-tpl.html" | resources.ExecuteAsTemplate $filePath . }}
         
         <div class="row mx-auto">
