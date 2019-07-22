@@ -1,0 +1,14 @@
+title = "Incremental data processing"
+language = "en"
+abstract = """Incremental data processing is a method of applying computations to a newly added data subset. It may drastically help decrease the cost and processing time in Big Data systems. However, this method may also increase complexity. This approach enables delivery of updates in real-time to the global-scale data receivers.
+
+This talk takes a look at design choices and looks at how certain data structures or patterns, such as the Kappa architecture, can help build incremental data processing systems.
+"""
+track = ""
+tags = ["data science" , "artifical intelligence"]
+
+[speakers]
+name = "Dominik Plichta"
+company = "Tom Tom"
+bio = "Dominik Plichta is a software architect at TomTom. His interests are problem-solving, architecture, distributed computing, and digital maps. He's been working on digital maps processing systems, mobile games, front-end applications, and PLM software."
+photo = "speakers/dominik_plichta.jpg"
