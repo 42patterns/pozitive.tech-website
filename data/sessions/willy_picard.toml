@@ -1,4 +1,4 @@
-title = "Experiment, don't argue: or how I learned to stop worrying and love experimenting in production."
+title = "Experiment, don't argue: or how I learned to stop worrying and love experimenting in production"
 language = "en"
 abstract = ""
 track = ""
@@ -6,6 +6,7 @@ tags = ["microservices", "agile", "quality"]
 
 [speakers]
 name = "Willy Picard"
+role = "Head of the Datalab at Egnyte"
 company = "Egnyte"
 bio = ""
 photo = "speakers/willy_picard.jpg"    

@@ -9,6 +9,7 @@ tags = ["architecture", "data"]
 
 [speakers]
 name = "Dominik Plichta"
+role = "Senior Architect at TomTom"
 company = "Tom Tom"
 bio = "Dominik Plichta is a software architect at TomTom. His interests are problem-solving, architecture, distributed computing, and digital maps. He's been working on digital maps processing systems, mobile games, front-end applications, and PLM software."
 photo = "speakers/dominik_plichta.jpg"
