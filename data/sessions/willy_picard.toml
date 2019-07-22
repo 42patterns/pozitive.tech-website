@@ -6,5 +6,6 @@ tags = ["microservices", "agile", "quality"]
 
 [speakers]
 name = "Willy Picard"
+company = "Egnyte"
 bio = ""
 photo = "speakers/willy_picard.jpg"    
