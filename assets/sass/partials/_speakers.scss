@@ -7,6 +7,10 @@
             text-transform: capitalize;
         }
     
+        .name {
+            margin-top: 0 !important;
+        }
+
         .photo {
             margin-bottom: 1em;
 
@@ -37,11 +41,18 @@
         }
 
         .description > * > div {
-            margin-bottom: 1em;             
+            margin-top: 0.5em;
+            margin-bottom: 1.5em;        
+        }
+
+        .role {
+            font-size: 0.9em;
+            color: #616161;            
         }
 
         .bio {
-            font-size: 0.7em;
+            font-size: 0.8em;
+            font-weight: $font-extra-bold;
             color: #616161;            
         }
 
@@ -53,11 +64,16 @@
             padding-bottom: 0.3em;
 
             h5 {
-                border-left: 2px solid $color-main;
+                border-left: 3px solid $color-main;
                 color: $color-secondary;
-                font-size: 0.9em;
+                font-size: 1.2em;
                 padding-left: 0.6em;
-                margin-bottom: 0;
+            }
+
+            .abstract {
+                margin-top: 1em;
+                font-size: 0.9em;
+                color: #616161;            
             }
         }
     }
@@ -78,6 +94,14 @@
             width: 250px;                
         }
 
+        .name {
+            white-space: nowrap !important;
+
+            h1, h2, h3, h4, h5 {
+                margin: 0;
+            }
+        }
+
         .description > div {
             padding-left: 0.5em;
             background-color: white;
@@ -93,8 +117,8 @@
             margin-bottom: 1em;             
         }
 
-        .bio {
-            font-size: 0.7em;
+        .role {
+            font-size: 0.8em;
             color: #616161;            
         }
 
