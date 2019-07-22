@@ -415,6 +415,55 @@ nav li {
     .jumbotron {
       padding-bottom: 0; } }
 
+.speaker__section {
+  color: #1bacb1; }
+  .speaker__section .speaker h1, .speaker__section .speaker h2, .speaker__section .speaker h3, .speaker__section .speaker h4, .speaker__section .speaker h5 {
+    text-transform: capitalize; }
+  .speaker__section .speaker .name {
+    margin-top: 0 !important; }
+  .speaker__section .speaker .photo {
+    margin-bottom: 1em; }
+    .speaker__section .speaker .photo img {
+      border: 2px solid #1bacb1;
+      height: 350px;
+      width: 350px; }
+  .speaker__section .speaker .tags span {
+    font-weight: 700;
+    font-size: 0.8em; }
+  .speaker__section .speaker .description > div {
+    padding-left: 0.5em;
+    background-color: white;
+    opacity: 0.8; }
+    @media (min-width: 767px) {
+      .speaker__section .speaker .description > div {
+        padding-left: 1.5em;
+        padding-right: 1em; } }
+  .speaker__section .speaker .description > * > div {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em; }
+  .speaker__section .speaker .role {
+    font-size: 0.9em;
+    color: #616161; }
+  .speaker__section .speaker .bio {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #616161; }
+  .speaker__section .speaker .session {
+    border: 1px solid #1bacb1;
+    padding-left: 0.6em;
+    padding-top: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.3em; }
+    .speaker__section .speaker .session h5 {
+      border-left: 3px solid #1bacb1;
+      color: #002b38;
+      font-size: 1.2em;
+      padding-left: 0.6em; }
+    .speaker__section .speaker .session .abstract {
+      margin-top: 1em;
+      font-size: 0.9em;
+      color: #616161; }
+
 .speakers__section {
   color: #1bacb1; }
   .speakers__section .speaker {
@@ -424,6 +473,10 @@ nav li {
     .speakers__section .speaker img {
       height: 250px;
       width: 250px; }
+    .speakers__section .speaker .name {
+      white-space: nowrap !important; }
+      .speakers__section .speaker .name h1, .speakers__section .speaker .name h2, .speakers__section .speaker .name h3, .speakers__section .speaker .name h4, .speakers__section .speaker .name h5 {
+        margin: 0; }
     .speakers__section .speaker .description > div {
       padding-left: 0.5em;
       background-color: white;
@@ -434,8 +487,8 @@ nav li {
           padding-right: 1em; } }
     .speakers__section .speaker .description > * > div {
       margin-bottom: 1em; }
-    .speakers__section .speaker .bio {
-      font-size: 0.7em;
+    .speakers__section .speaker .role {
+      font-size: 0.8em;
       color: #616161; }
     .speakers__section .speaker .session {
       border: 1px solid #1bacb1;
