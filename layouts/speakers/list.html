@@ -4,6 +4,11 @@
 <section id="speakers" class="speakers__section">
     <div class="container text-center py-5">
         {{ range sort .Site.Data.sessions "track" "desc" "speakers.name"}}
+
+        <!-- generate speaker pages from template -->
+        {{ $filePath := printf "/session/%s.html" (.title | urlize) }}
+        {{ $speaker_page := resources.Get "session-tpl.html" | resources.ExecuteAsTemplate $filePath . }}
+        
         <div class="row mx-auto">
             <div class="col-12 col-md-8 offset-md-2">
                 <div class="speaker my-3 d-flex">
@@ -17,12 +22,12 @@
                             </div>
                             <div class="bio">
                                 <span>
-                                    {{ .speakers.bio | truncate 100 }}
+                                    {{ .speakers.role }}
                                 </span>
                             </div>    
                             {{ with .title }}
                             <div class="session">
-                                <h5>{{ . }}</h5>
+                                <a href="{{ $speaker_page.Permalink }}"><h5>{{ . }}</h5></a>
                             </div>
                             {{ end }}
                             <div class="tags text-nowrap overflow-hidden">

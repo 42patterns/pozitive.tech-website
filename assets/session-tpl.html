@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {{ partial "headers.html" . }}
+    </head>
+
+    <body>
+        <div id="st-container" class="st-container disable-scrolling">
+            <div class="st-pusher">
+                <div class="st-content">
+
+                <!-- Begin Top Section -->
+                <section id="top-section" class="top-section image-section enable-overlay" 
+                    style="background-image: url('/images/sections-background/duotone-agenda.jpg');">
+                    <div class="overlay white-overlay"></div>
+                    {{ partial "navigation.html" . }}
+
+                    <div class="container">
+                        <div class="jumbotron text-center">
+                            <!-- animated hiding -->
+                            <div class="" data-animation="fadeInLeft" data-delay="500">
+                                <h1>{{ .speakers.name  }}</h1>
+                            </div>
+                        </div>
+                    </div>                    
+                </section>
+                <!-- End Top Section -->
+
+                <section id="speaker" class="speaker__section">
+                    <div class="container speaker my-5 d-flex">
+                        <div class="d-flex flex-column">
+                            <div class="photo mr-1 col-4 p-0 text-left">
+                                <img src="/images/{{ .speakers.photo }}">
+                            </div>
+                            <div class="tags">
+                            {{ range .tags }}
+                                <span>#{{ . | urlize }}</span>
+                            {{ end }}
+                            </div>
+                        </div>
+                        <div>
+                            <div class="description">
+                                <div class="h-100 d-flex flex-column justify-content-center">
+                                    <div class="name text-nowrap">
+                                        <h4>{{ .speakers.name }}</h4>
+                                    </div>
+                                    <div class="role">{{ .speakers.role }}</div>
+                                    <div class="bio">
+                                        <span>
+                                            {{ .speakers.bio }}
+                                        </span>
+                                    </div>    
+                                    {{ if .title }}
+                                    <div class="session">
+                                        <h5>{{ .title }}</h5>
+                                        <div class="abstract">
+                                            {{ .abstract }}
+                                        </div>
+                                    </div>
+                                    {{ end }}
+                                </div>                        
+                            </div>
+                        </div>                        
+                    </div>
+                </section>
+                
+                {{ partial "footer.html" . }}
+                </div>
+            </div>
+        </div>
+        {{ partial "scripts.html" . }}
+    </body>
+
+</html>
