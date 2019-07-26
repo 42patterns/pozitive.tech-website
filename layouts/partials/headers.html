@@ -12,14 +12,14 @@
 <meta name="twitter:site" content="@poztivietech">
 <meta name="twitter:title" content="{{ with .Title }} {{ . }}  | {{ end }}pozitive technologies 2019 | Poznań">
 <meta name="twitter:description" content="{{if .Description}}{{ .Description }}{{else}}{{ .Site.Params.description }}{{ end }}">
-<meta name="twitter:image:src" content="{{ if isset . "Opengraph" }}{{.Site.BaseURL}}images/{{.Opengraph}}{{else}}https://pozitive.tech/images/social/opengraph-twitter.png{{end}}">
+<meta name="twitter:image:src" content="{{ if isset . "Opengraph" }}{{.Site.BaseURL}}/images/{{.Opengraph}}{{else}}https://pozitive.tech/images/social/opengraph-twitter.png{{end}}">
 
 <!-- Social: Facebook / Open Graph -->
 <meta property="og:title"  content="{{ with .Title }} {{ . }}  | {{ end }}pozitive.tech 2019 | Poznań">
 <meta property="og:site_name" content="pozitive.tech 2019 | Poznań">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pozitive.tech">
-<meta property="og:image" content="{{ if isset . "Opengraph" }}{{.Site.BaseURL}}images/{{.Opengraph}}{{else}}https://pozitive.tech/images/social/opengraph-pozitive-technologies.png{{end}}">
+<meta property="og:image" content="{{ if isset . "Opengraph" }}{{.Site.BaseURL}}/images/{{.Opengraph}}{{else}}https://pozitive.tech/images/social/opengraph-pozitive-technologies.png{{end}}">
 <meta property="og:description" content="{{if .Description}}{{ .Description }}{{else}}{{ .Site.Params.description }}{{ end }}">
 
 <!-- favicons -->
