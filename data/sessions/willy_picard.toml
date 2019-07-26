@@ -3,7 +3,11 @@ language = "en"
 abstract = ""
 track = ""
 tags = ["microservices", "agile", "quality"]
-opengraph = "speakers/willy_picard-og.png"
+
+[opengraph]
+fb = "speakers/willy_picard-og.png"
+twitter = "speakers/willy_picard-og-sq.png"
+
 
 [speakers]
 name = "Willy Picard"

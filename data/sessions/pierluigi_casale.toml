@@ -3,7 +3,10 @@ language = "en"
 abstract = "Have you ever tried to cook? For preparing a good meal you need ingredients, cooking tools and a recipe. The same applies to data processing. In this talk I will show how TomTom is generating insights and products from the massive amount of data collected from devices in the real world."
 track = ""
 tags = ["data science" , "artifical intelligence"]
-opengraph = "speakers/pierluigi_casale-og.png"
+
+[opengraph]
+fb = "speakers/pierluigi_casale-og.png"
+twitter = "speakers/pierluigi_casale-og-sq.png"
 
 [speakers]
 name = "Pierluigi Casale"

@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>        
-        {{ partial "headers.html" (dict "Title" .session.title "Description" .session.abstract "Opengraph" .session.opengraph "Site" .Site) }}
+        {{ partial "headers.html" (dict "Title" .session.title "Social" (dict "description" .session.abstract "opengraph" .session.opengraph) "Site" .Site "sessionPage" true) }}
     </head>
 
     <body>
