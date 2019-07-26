@@ -16,21 +16,13 @@
 <meta name="twitter:description" content="{{if .Social.description}}{{ .Social.description }}{{else}}{{ .Site.Params.description }}{{ end }}">
 
 <!-- Social: Facebook / Open Graph -->
-{{ if isset . "sessionPage" }} 
-<meta property="og:title"  content="{{ with .Title }} {{ . }}  | {{ end }}pozitive.tech 2019 | Poznań">
-<meta property="og:site_name" content="pozitive.tech 2019 | Poznań">
-<meta property="og:type" content="article">
-<meta property="og:url" content="{{ if .Permalink}}{{.Permalink}}{{else}}{{ .Site.BaseURL }}{{end}}">
-<meta property="og:image" content="{{ if .Social.opengraph }}{{.Site.BaseURL}}/images/{{.Social.opengraph.fb}}{{else}}https://pozitive.tech/images/social/opengraph-pozitive-technologies.png{{end}}">
-<meta property="og:description" content="{{if .Social.description}}{{ .Social.description }}{{else}}{{ .Site.Params.description }}{{ end }}">
-{{ else }}
+
 <meta property="og:title"  content="{{ with .Title }} {{ . }}  | {{ end }}pozitive.tech 2019 | Poznań">
 <meta property="og:site_name" content="pozitive.tech 2019 | Poznań">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ if .Permalink}}{{.Permalink}}{{else}}{{ .Site.BaseURL }}{{end}}">
-<meta property="og:image" content="https://pozitive.tech/images/social/opengraph-pozitive-technologies.png">
 <meta property="og:description" content="{{if .Social.description}}{{ .Social.description }}{{else}}{{ .Site.Params.description }}{{ end }}">
-{{ end }}
+<meta property="og:image" content="{{ if .Social.opengraph }}{{.Site.BaseURL}}/images/{{.Social.opengraph.fb}}{{else}}https://pozitive.tech/images/social/opengraph-pozitive-technologies.png{{end}}">
 
 <!-- favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
