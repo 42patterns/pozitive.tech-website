@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        {{ .Scratch.Set "headers-data" (dict "Social" (dict ) "Title" .Title "Site" .Site)}}
+        {{ .Scratch.Set "headers-data" (dict "Social" (dict ) "Permalink" .Permalink "Title" .Title "Site" .Site)}}
         {{ partial "headers.html" (.Scratch.Get "headers-data") }}
     </head>
 

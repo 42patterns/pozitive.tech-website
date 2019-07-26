@@ -2,7 +2,8 @@
 <html lang="en">
 
     <head>        
-        {{ partial "headers.html" (dict "Title" .session.title "Social" (dict "description" .session.abstract "opengraph" .session.opengraph) "Site" .Site "sessionPage" true) }}
+        {{ $permalink := (.session.title | urlize) | printf "%s/sessions/%s.html" .Site.BaseURL  | printf "%s" }}        
+        {{ partial "headers.html" (dict "Title" .session.title "Social" (dict "description" .session.abstract "opengraph" .session.opengraph) "Permalink" $permalink "Site" .Site "sessionPage" true) }}
     </head>
 
     <body>
