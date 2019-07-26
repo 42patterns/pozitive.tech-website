@@ -1,0 +1,13 @@
+title = "Reactive Programming. Goodbye MVC"
+language = "en"
+abstract = """Reactive programming is getting more popular recently. Especially in Web development world. What is reactive programming? What problems can we solve with that technology? What kind of problems it creates? Is it the end of good, old MVC? During this talk I will explain building blocks of Reactive programming and how to start thinking reactively. I will show examples of situations where Reactive approach can be beneficial for programmers and saves us a lot of time."""
+track = ""
+tags = ["architecture"]
+
+[speakers]
+name = "Michal Jawulski"
+role = "Senior Java Script Developer"
+company = "Capgemini"
+bio = "For over 7 years, he has been creating and designing systems for financial companies from all over the world. He likes to learn new technologies and is passionate about software engineering. In the evenings, he develops his own projects with new technological novelties. All the time associated with Wroclaw.  First, he graduated from the University of Technology and is currently working at the Capgemini branch in Wroclaw. In addition, he is a Premier League fan who relaxes while playing in FIFA."
+photo = "speakers/michal_lakomski.jpg"
+
