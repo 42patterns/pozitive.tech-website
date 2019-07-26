@@ -6,6 +6,7 @@ This talk takes a look at design choices and looks at how certain data structure
 """
 track = ""
 tags = ["architecture", "data"]
+opengraph = "speakers/dominik_plichta-og.png"
 
 [speakers]
 name = "Dominik Plichta"

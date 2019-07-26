@@ -3,11 +3,12 @@
 {{ $baseUrl := .Site.BaseURL }}
 <section id="speakers" class="speakers__section">
     <div class="container text-center py-5">
+        {{ $Site := .Site}}
         {{ range sort .Site.Data.sessions "track" "desc" "speakers.name"}}
 
         <!-- generate speaker pages from template -->
         {{ $filePath := printf "/sessions/%s.html" (.title | urlize) }}
-        {{ $speaker_page := resources.Get "session-tpl.html" | resources.ExecuteAsTemplate $filePath . }}
+        {{ $speaker_page := resources.Get "session-tpl.html" | resources.ExecuteAsTemplate $filePath (dict "session" . "Site" $Site) }}
         
         <div class="row mx-auto">
             <div class="col-12 col-md-8 offset-md-2">

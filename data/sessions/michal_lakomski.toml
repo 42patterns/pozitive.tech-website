@@ -3,6 +3,7 @@ language = "en"
 abstract = """Presentation will explore the idea of how to prepare city hall for the digital transition. Speech will focus on the importance of smart city strategy and cooperation with value creators."""
 track = ""
 tags = ["data science" , "smart city"]
+opengraph = "speakers/michal_lakomski-og.png"
 
 [speakers]
 name = "Michal Łakomski"

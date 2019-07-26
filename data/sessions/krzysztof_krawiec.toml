@@ -3,6 +3,7 @@ language = "en"
 abstract = "Programming consists in translating some form of user's intent into an executable computer program, and automating that process is known as program synthesis. A range of approaches to program synthesis have been proposed in the past, and recent progress in machine learning brought it much closer to practical applicability. In this talk, I will review selected approaches to program synthesis, with particular emphasis on recent developments, and discuss the implications both for AI as well as for the practice of software engineering."
 track = "keynote"
 tags = ["artifical intelligence", "keynote"]
+opengraph = "speakers/krzysztof_krawiec-og.png"
 
 [speakers]
 name = "Krzysztof Krawiec"

@@ -4,6 +4,9 @@ title = "pozitive technologies 2019 | Poznań"
 enableRobotsTXT = true
 disableKinds = ["RSS", "taxonomyTerm"]
 
+[params]
+description = "Pozitive technologies. A tech conference in Poznań. Software architecture meets artifical intelligence."
+
 [mediaTypes]
 [mediaTypes."application/css"]
 suffixes = ["css"]

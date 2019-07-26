@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        {{ partial "headers.html" . }}
+    <head>        
+        {{ partial "headers.html" (dict "Title" .session.title "Description" .session.abstract "Opengraph" .session.opengraph "Site" .Site) }}
     </head>
 
     <body>
@@ -20,7 +20,7 @@
                         <div class="jumbotron text-center">
                             <!-- animated hiding -->
                             <div class="" data-animation="fadeInLeft" data-delay="500">
-                                <h1>{{ .speakers.name  }}</h1>
+                                <h1>{{ .session.speakers.name }}</h1>
                             </div>
                         </div>
                     </div>                    
@@ -31,10 +31,10 @@
                     <div class="container speaker my-5 d-flex">
                         <div class="d-flex flex-column">
                             <div class="photo mr-1 col-4 p-0 text-left">
-                                <img src="/images/{{ .speakers.photo }}">
+                                <img src="/images/{{ .session.speakers.photo }}">
                             </div>
                             <div class="tags">
-                            {{ range .tags }}
+                            {{ range .session.tags }}
                                 <span>#{{ . | urlize }}</span>
                             {{ end }}
                             </div>
@@ -43,19 +43,19 @@
                             <div class="description">
                                 <div class="h-100 d-flex flex-column">
                                     <div class="name text-nowrap">
-                                        <h4>{{ .speakers.name }}</h4>
-                                        <div class="role">{{ .speakers.role }}</div>
+                                        <h4>{{ .session.speakers.name }}</h4>
+                                        <div class="role">{{ .session.speakers.role }}</div>
                                     </div>                                    
                                     <div class="bio">
                                         <span>
-                                            {{ .speakers.bio }}
+                                            {{ .session.speakers.bio }}
                                         </span>
                                     </div>    
-                                    {{ if .title }}
+                                    {{ if .session.title }}
                                     <div class="session">
-                                        <h5>{{ .title }}</h5>
+                                        <h5>{{ .session.title }}</h5>
                                         <div class="abstract">
-                                            {{ .abstract }}
+                                            {{ .session.abstract }}
                                         </div>
                                     </div>
                                     {{ end }}

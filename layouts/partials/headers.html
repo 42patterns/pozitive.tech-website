@@ -4,23 +4,23 @@
 <title>{{ with .Title }} {{ . }}  | {{ end }}{{- .Site.Title -}}</title>
 
 <meta name="author" content="pozitive technologies">
-<meta name="description" content="pozitive technologies 2019 | Poznań">
+<meta name="description" content="{{ with .Title }} {{ . }} | {{ end }}pozitive technologies 2019 | Poznań">
 <meta name="keywords" content="Software architecture, artificial intelligence, machine learning, software engineering">
 <link rel="canonical" href="https://pozitive.tech">
 <!-- Social: Twitter -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@poztivietech">
-<meta name="twitter:title" content="pozitive technologies 2019 | Poznań">
-<meta name="twitter:description" content="Pozitive technologies. A tech conference in Poznań. Software architecture meets artifical intelligence.">
-<meta name="twitter:image:src" content="https://pozitive.tech/images/social/opengraph-twitter.png">
+<meta name="twitter:title" content="{{ with .Title }} {{ . }}  | {{ end }}pozitive technologies 2019 | Poznań">
+<meta name="twitter:description" content="{{if .Description}}{{ .Description }}{{else}}{{ .Site.Params.description }}{{ end }}">
+<meta name="twitter:image:src" content="{{ if isset . "Opengraph" }}{{.Site.BaseURL}}images/{{.Opengraph}}{{else}}https://pozitive.tech/images/social/opengraph-twitter.png{{end}}">
 
 <!-- Social: Facebook / Open Graph -->
-<meta property="og:title"  content="pozitive.tech 2019 | Poznań">
+<meta property="og:title"  content="{{ with .Title }} {{ . }}  | {{ end }}pozitive.tech 2019 | Poznań">
 <meta property="og:site_name" content="pozitive.tech 2019 | Poznań">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pozitive.tech">
-<meta property="og:image" content="https://pozitive.tech/images/social/opengraph-pozitive-technologies.png">
-<meta property="og:description" content="Pozitive technologies. A tech conference in Poznań. Software architecture meets artifical intelligence.">
+<meta property="og:image" content="{{ if isset . "Opengraph" }}{{.Site.BaseURL}}images/{{.Opengraph}}{{else}}https://pozitive.tech/images/social/opengraph-pozitive-technologies.png{{end}}">
+<meta property="og:description" content="{{if .Description}}{{ .Description }}{{else}}{{ .Site.Params.description }}{{ end }}">
 
 <!-- favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
