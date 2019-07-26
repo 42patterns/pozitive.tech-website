@@ -1,7 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+  {{ range .Data.Pages }}
   <url>
-    <loc>{{ .Site.BaseURL }}/index.html</loc>
-    <lastmod>2019-07-02</lastmod>
+    <loc>{{ .Permalink }}</loc>
+    <lastmod>{{ now.Format "2006-01-02" }}</lastmod>
   </url>
+  {{ end }}
+  {{ range sort .Site.Data.sessions "track" "desc" "speakers.name"}}
+  {{ if .title }}
+  <url>
+    <loc>https://pozitive.tech{{ printf "/sessions/%s.html" (.title | urlize) }}</loc>
+    <lastmod>{{ now.Format "2006-01-02" }}</lastmod>
+  </url>
+  {{ end }}
+  {{ end }}
 </urlset>
