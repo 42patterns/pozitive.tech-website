@@ -16,11 +16,9 @@
 <meta name="twitter:description" content="{{if .Social.description}}{{ .Social.description }}{{else}}{{ .Site.Params.description }}{{ end }}">
 
 <!-- Social: Facebook / Open Graph -->
-
 <meta property="og:title"  content="{{ with .Title }} {{ . }}  | {{ end }}pozitive.tech 2019 | Poznań">
 <meta property="og:site_name" content="pozitive.tech 2019 | Poznań">
 <meta property="og:type" content="website">
-<meta property="og:url" content="{{ if .Permalink}}{{.Permalink}}{{else}}{{ .Site.BaseURL }}{{end}}">
 <meta property="og:description" content="{{if .Social.description}}{{ .Social.description }}{{else}}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:image" content="{{ if .Social.opengraph }}{{.Site.BaseURL}}/images/{{.Social.opengraph.fb}}{{else}}https://pozitive.tech/images/social/opengraph-pozitive-technologies.png{{end}}">
 
