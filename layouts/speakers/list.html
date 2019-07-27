@@ -12,31 +12,45 @@
         
         <div class="row mx-auto">
             <div class="col-12 col-md-8 offset-md-2">
-                <div class="speaker my-3 d-flex">
-                    <div class="photo mr-1 col-4 p-0 text-left">
-                        <img src="{{ $baseUrl }}/images/{{ .speakers.photo }}">
-                    </div>
-                    <div class="description col-8 text-left">
-                        <div class="h-100 d-flex flex-column justify-content-center">
-                            <div class="name">
-                                <h4>{{ .speakers.name }}</h4>
-                                <div class="role">
-                                    <span>
-                                        {{ .speakers.role }}
-                                    </span>
-                                </div>        
-                            </div>
-                            {{ with .title }}
-                            <div class="session">
-                                <a href="{{ $speaker_page.Permalink }}"><h5>{{ . }}</h5></a>
-                            </div>
-                            {{ end }}
-                            <div class="tags text-nowrap overflow-hidden">
-                                {{ range .tags }}
-                                <span>#{{ . | urlize }}</span>
+                <div class="speaker my-3 d-flex flex-column">
+                    <div class="d-flex flex-row">
+                        <div class="photo mr-1 col-6 col-md-4 p-0 text-left">
+                            <img src="{{ $baseUrl }}/images/{{ .speakers.photo }}">
+                        </div>
+                        <div class="description col-6 col-md-8 p-1 text-left">
+                            <div class="h-100 d-flex flex-column justify-content-center">
+                                <div class="name">
+                                    <h4>{{ .speakers.name }}</h4>
+                                    <div class="role">
+                                        <span>
+                                            {{ .speakers.role }}
+                                        </span>
+                                    </div>        
+                                </div>
+                                {{ with .title }}
+                                <div class="session d-none d-md-block">
+                                    <a href="{{ $speaker_page.Permalink }}"><h5>{{ . }}</h5></a>
+                                </div>
                                 {{ end }}
-                            </div>
-                        </div>                        
+                                <div class="tags d-none d-md-block">
+                                    {{ range .tags }}
+                                    <span>#{{ . | urlize }}</span>
+                                    {{ end }}
+                                </div>
+                            </div>                                                
+                        </div>  
+                    </div>
+                    <div class="d-md-none m-2">
+                        {{ with .title }}
+                        <div class="session my-2">
+                            <a href="{{ $speaker_page.Permalink }}"><h5>{{ . }}</h5></a>
+                        </div>
+                        {{ end }}                                      
+                        <div class="tags my-2">
+                            {{ range .tags }}
+                            <span>#{{ . | urlize }}</span>
+                            {{ end }}
+                        </div>
                     </div>
                 </div>
             </div>

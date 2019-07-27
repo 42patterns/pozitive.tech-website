@@ -90,23 +90,16 @@
         }
     
         img {
-            height: 250px;
-            width: 250px;                
+            width: 100%;                
         }
 
         .name {
-            white-space: nowrap !important;
-
             h1, h2, h3, h4, h5 {
                 margin: 0;
             }
         }
 
         .description > div {
-            padding-left: 0.5em;
-            background-color: white;
-            opacity: 0.8;
-
             @media (min-width : 767px) { 
                 padding-left: 1.5em;
                 padding-right: 1em;    
