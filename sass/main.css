@@ -471,20 +471,13 @@ nav li {
     .speakers__section .speaker h1, .speakers__section .speaker h2, .speakers__section .speaker h3, .speakers__section .speaker h4, .speakers__section .speaker h5 {
       text-transform: capitalize; }
     .speakers__section .speaker img {
-      height: 250px;
-      width: 250px; }
-    .speakers__section .speaker .name {
-      white-space: nowrap !important; }
-      .speakers__section .speaker .name h1, .speakers__section .speaker .name h2, .speakers__section .speaker .name h3, .speakers__section .speaker .name h4, .speakers__section .speaker .name h5 {
-        margin: 0; }
-    .speakers__section .speaker .description > div {
-      padding-left: 0.5em;
-      background-color: white;
-      opacity: 0.8; }
-      @media (min-width: 767px) {
-        .speakers__section .speaker .description > div {
-          padding-left: 1.5em;
-          padding-right: 1em; } }
+      width: 100%; }
+    .speakers__section .speaker .name h1, .speakers__section .speaker .name h2, .speakers__section .speaker .name h3, .speakers__section .speaker .name h4, .speakers__section .speaker .name h5 {
+      margin: 0; }
+    @media (min-width: 767px) {
+      .speakers__section .speaker .description > div {
+        padding-left: 1.5em;
+        padding-right: 1em; } }
     .speakers__section .speaker .description > * > div {
       margin-bottom: 1em; }
     .speakers__section .speaker .role {
