@@ -47,7 +47,7 @@ $nav-scroll-color-hover: rgba(0, 43, 56, .5);
     width: 16px;
     height: 16px;
     cursor: pointer;
-    fill: #8b8b8b;
+    color: #8b8b8b;
     transition: all .5s;
 }
 
@@ -56,12 +56,12 @@ $nav-scroll-color-hover: rgba(0, 43, 56, .5);
     transform: translateY(20px);
     transition: $base-transition;
     @media (max-width: 767px) {
-        transform: translateX(-45px);
+        transform: translateX(-15px);
     }
     .top-header.after-scroll & {
         transform: translateY(1px);
         @media (max-width: 767px) {
-            transform: translateX(-45px);
+            transform: translateX(-15px);
         }
     }
     .logo {
@@ -78,8 +78,8 @@ $nav-scroll-color-hover: rgba(0, 43, 56, .5);
     }
 }
 .logo-navbar {
-    width: 185px;
-    height: 60px;
+    width: 285px;
+    height: 80px;
     margin: 8px 20px 0 -10px;
     transform: scale(.6);
     vertical-align: middle;
@@ -134,9 +134,16 @@ nav {
             text-transform: uppercase;
             text-decoration: none;
 
+            &.btn-light {
+                @media (max-width: 767px) {
+                    color: white !important;
+                    background-color: $color-secondary !important;            
+                }
+            }
+
             &.btn-dark {
                 color: white !important;
-                background-color: $color-secondary !important;
+                background-color: $color-secondary !important;            
             }
         }
         a {
@@ -144,14 +151,14 @@ nav {
             font-weight: $font-extra-bold;
             transition: $base-transition;
             text-transform: lowercase;
-            color: $nav-color;
+            color: white;
             @media (max-width: 767px) {
                 font-size: 16px;
                 display: block;
                 padding: 13px 15px 13px 15px;
                 transition: $base-transition;
                 text-transform: none;
-                color: rgba(0, 0, 0, .3);
+                color: rgba(0, 0, 0, 1) !important;
                 outline: 0;
             }
             &.current, &:hover {
@@ -195,9 +202,9 @@ nav {
 .icon-menu {
     width: 20px;
     height: 20px;
-    fill: #e6e6e6;
+    color: #e6e6e6;
     .top-header.after-scroll & {
-        fill: #464646;
+        color: #464646;
     }
 }
 .menu-trigger {

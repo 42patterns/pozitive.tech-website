@@ -19,15 +19,17 @@
         }        
     }
 
-    .logo {
-        height: 85px;
-        width: 340px;
-
-        @media (max-width : 767px) { 
-            height: 60px;
-            width: 240px;    
-        }
-    }    
+    .hero-content {
+        .logo {
+            height: 85px;
+            width: 340px;
+    
+            @media (max-width : 767px) { 
+                height: 60px;
+                width: 240px;    
+            }
+        }        
+    }
 
     .date {
         color: white;
