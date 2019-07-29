@@ -19,7 +19,7 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
-docker run -it --rm -p 1313:1313 -v ${PWD}:/srv/hugo hugo -s ./
+docker run -it --rm -p 1313:1313 -v ${PWD}:/srv/hugo hugo --minify -s ./
 
 echo "Updating gh-pages branch"
 cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
