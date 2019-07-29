@@ -1,4 +1,4 @@
-title = "Reactive Programming. Goodbye MVC"
+title = "Reactive Programming. Goodbye MVC?"
 language = "en"
 abstract = """Reactive programming is getting more popular recently. Especially in Web development world. What is reactive programming? What problems can we solve with that technology? What kind of problems it creates? Is it the end of good, old MVC? During this talk I will explain building blocks of Reactive programming and how to start thinking reactively. I will show examples of situations where Reactive approach can be beneficial for programmers and saves us a lot of time."""
 track = ""
