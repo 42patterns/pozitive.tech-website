@@ -45,7 +45,9 @@
                                 <div class="h-100 d-flex flex-column">
                                     <div class="name text-nowrap">
                                         <h4>{{ .session.speakers.name }}</h4>
-                                        <div class="role">{{ .session.speakers.role }}</div>
+                                        <div class="role">
+                                            {{ .session.speakers.role }}{{ with .session.speakers.company }} at {{.}}{{end}}
+                                        </div>
                                     </div>                                    
                                     <div class="bio">
                                         <span>

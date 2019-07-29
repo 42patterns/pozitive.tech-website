@@ -23,13 +23,13 @@
                                     <h4>{{ .speakers.name }}</h4>
                                     <div class="role">
                                         <span>
-                                            {{ .speakers.role }}
+                                            {{ .speakers.role }}{{ with .speakers.company }} at {{.}}{{end}}
                                         </span>
                                     </div>        
                                 </div>
                                 {{ with .title }}
                                 <div class="session d-none d-md-block">
-                                    <a href="{{ $speaker_page.Permalink }}"><h5>{{ . }}</h5></a>
+                                    <a href="{{ $speaker_page.RelPermalink }}"><h5>{{ . }}</h5></a>
                                 </div>
                                 {{ end }}
                                 <div class="tags d-none d-md-block">

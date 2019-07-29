@@ -11,6 +11,6 @@ twitter = "speakers/pierluigi_casale-og-sq.png"
 [speakers]
 name = "Pierluigi Casale"
 role = "Group Data Scientist"
-company = "Tom Tom"
+company = "TomTom"
 bio = "Pierluigi Casale is the Group Data Scientist in TomTom. He holds a B.Sc. and M.Sc. in Electronics, M.Sc. in Computer vision and Artificial Intelligence and a Ph.D. in Applied Mathematics. His interests are related to IoT application with particular focus on Machine Learning and Data Science. He is lecturer of Data Science at the Jheronimous Academy of Data Science, ’s-Hertogenbosh, The Netherlands."
 photo = "speakers/pierluigi_casale.jpg"    

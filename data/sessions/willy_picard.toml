@@ -11,7 +11,7 @@ twitter = "speakers/willy_picard-og-sq.png"
 
 [speakers]
 name = "Willy Picard"
-role = "Head of the Datalab at Egnyte"
+role = "Head of the Datalab"
 company = "Egnyte"
 bio = ""
 photo = "speakers/willy_picard.jpg"    
