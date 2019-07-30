@@ -189,6 +189,26 @@
                                         </div>
                                     </div> 
                                 </div>
+                                <div class="media">
+                                {{ with .Site.GetPage "page" "partners" }}
+                                    <div class="community">                                        
+                                        <h4>Communities</h4>
+                                        <div class="d-flex flex-wrap align-items-center justify-content-center">
+                                        {{ range .Resources.Match "community/*" }}
+                                            <img src="{{ .RelPermalink }}">                                
+                                        {{ end }}
+                                        </div>
+                                    </div>
+                                    {{/*  <div class="conferences">                                        
+                                        <h4>Conferences</h4>
+                                        <div class="d-flex flex-wrap align-items-center justify-content-center">
+                                        {{ range .Resources.Match "conferences/*" }}
+                                            <img src="{{ .RelPermalink }}">                                
+                                        {{ end }}
+                                        </div>
+                                    </div>                                      */}}
+                                {{ end }}
+                                </div>
                             </div>
                         </div>
                     </section>
