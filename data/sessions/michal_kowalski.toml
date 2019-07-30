@@ -1,0 +1,12 @@
+title = "Distributed architectures - behind the hype"
+language = "en"
+abstract = " We are surrounded by fancy, highly popular architecture concepts like microservices, cloud, lambdas, etc. Is this something more than just a hype-driven development? Should we drop all we learned through the years in favor of those new shiny approaches? How to design our systems in 2019 effectively? In this talk, I'd like to dive into some of the modern approaches and demystify the hype behind them. If you'd like to hear about practical aspects instead of technology marketing, this talk is just for you! Not only for architects & developers."
+track = ""
+tags = ["architecture", "microservices"]
+
+[speakers]
+name = "Michał Kowalski"
+role = "Solution Architect"
+company = "Sii"
+bio = "Programmer, technology enthusiast & homegrown Linux evangelist. Fan of simplicity and Software Craftsmanship approach. If he could, he would write a unit test even for this description. He combines experience with working on distributed applications, Big Data & stream processing, with security background in his everyday work as a Solution Architect at Sii Poznań. Interested in all aspects of making working software - starting from code, through the architecture up to the production deployments. When not writing about himself in the third person, he is probably riding a bike or cooking."
+photo = "speakers/michal_kowalski.jpg"
