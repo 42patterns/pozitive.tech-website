@@ -1,5 +1,5 @@
 title = "Application security survival kit"
-language = "en"
+language = "pl"
 abstract = "There seems to be a lot of confusion and disinformation about what security is and what isn’t. In this talk we’ll try to clean up this mess, explain the core concepts, decipher many buzzwords (CIA, ALE, SSDLC, OWASP) and have fun while doing it. We’ll tell you how to play the risk management game the proper way. Treat this talk as a Security Survival Kit you always wanted to have."
 track = ""
 tags = ["security", "architecture"]
