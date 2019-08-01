@@ -44,7 +44,15 @@
                             <div class="description">
                                 <div class="h-100 d-flex flex-column">
                                     <div class="name text-nowrap">
-                                        <h4>{{ .session.speakers.name }}</h4>
+                                        <h4>
+                                            {{ .session.speakers.name }}
+                                            {{ with (eq .session.language "pl") }}
+                                                &#x1F1F5;&#x1F1F1;
+                                            {{ end }}
+                                            {{ with (eq .session.language "en") }}
+                                                &#x1f1ec;&#x1f1e7;
+                                            {{ end }}
+                                        </h4>
                                         <div class="role">
                                             {{ .session.speakers.role }}{{ with .session.speakers.company }} at {{.}}{{end}}
                                         </div>
