@@ -1,0 +1,17 @@
+title = "Abandon all hope ye who code here... - how to deal with technical debt in ever-changing environment?"
+language = "en"
+abstract = "Technical debt is an integral part of software development - it's said that the line written today is tomorrow's tech-debt. During the presentation I will want to specify several different approaches of solving technical debt and what are their pros and cons. Everything will be based on real events or real effort showing not only potential approaches, but also when are they efficient and how did the end up within our organization, which has developed their product for over 10 years already."
+track = ""
+tags = ["microservices", "agile", "quality"]
+
+# [opengraph]
+# fb = "speakers/willy_picard-og.png"
+# twitter = "speakers/willy_picard-og-sq.png"
+
+
+[speakers]
+name = "Piotr Januszek"
+role = "Engineering Manager"
+company = "Egnyte"
+bio = "Piotr Januszek is an Engineering Manager in Egnyte located in Poznan, with a very strong QA background. He started his career as a developer, to then move towards a QA career with full technical understanding of systems he worked on. His over 10 years of experience for companies all over Europe helped him to get a deep understanding of both QA and development processes. This lead to achieving up to tripling the speed of software releases without significant reduction of end product."
+photo = "speakers/piotr_januszek.jpg"    
