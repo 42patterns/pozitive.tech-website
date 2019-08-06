@@ -47,13 +47,13 @@
 
         .role {
             font-size: 0.9em;
-            color: #616161;            
+            color: $color-content;            
         }
 
         .bio {
             font-size: 0.8em;
             font-weight: $font-extra-bold;
-            color: #616161;            
+            color: $color-content;            
         }
 
         .session {
@@ -73,7 +73,7 @@
             .abstract {
                 margin-top: 1em;
                 font-size: 0.9em;
-                color: #616161;            
+                color: $color-content;            
             }
         }
     }
@@ -112,7 +112,7 @@
 
         .role {
             font-size: 0.8em;
-            color: #616161;            
+            color: $color-content;            
         }
 
         .session {
