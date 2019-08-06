@@ -5,8 +5,8 @@ track = ""
 tags = ["agile", "quality", "machine learning"]
 
 [opengraph]
-fb = "speakers/willy_picard-og.png"
-twitter = "speakers/willy_picard-og-sq.png"
+fb = "willy_picard-og.png"
+twitter = "willy_picard-og-sq.png"
 
 
 [speakers]
@@ -14,4 +14,4 @@ name = "Willy Picard"
 role = "Head of the Datalab"
 company = "Egnyte"
 bio = ""
-photo = "speakers/willy_picard.jpg"    
+photo = "willy_picard.jpg"    

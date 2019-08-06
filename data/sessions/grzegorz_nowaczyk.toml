@@ -5,12 +5,12 @@ track = ""
 tags = ["security", "threat intelligence"]
 
 # [opengraph]
-# fb = "speakers/jaroslaw_ratajski-og.png"
-# twitter = "speakers/jaroslaw_ratajski-og-sq.png"
+# fb = "jaroslaw_ratajski-og.png"
+# twitter = "jaroslaw_ratajski-og-sq.png"
 
 [speakers]
 name = "Grzegorz Nowaczyk"
 role = "Head of Threat Intelligence"
 company = "GlaxoSmithKline"
 bio = "Security enthusiast and practitioner. Believe that security is a mindset, not technology. With GSK for over 13 years. Has held several security roles within risk and cyber operations in last decade. Recently responsible for strategy and delivery of Threat Intelligence. Home automation tinker. Triathlete."
-photo = "speakers/grzegorz_nowaczyk.jpg"
+photo = "grzegorz_nowaczyk.jpg"

@@ -8,12 +8,12 @@ track = ""
 tags = ["architecture", "data"]
 
 [opengraph]
-fb = "speakers/dominik_plichta-og.png"
-twitter = "speakers/dominik_plichta-og-sq.png"
+fb = "dominik_plichta-og.png"
+twitter = "dominik_plichta-og-sq.png"
 
 [speakers]
 name = "Dominik Plichta"
 role = "Senior Architect"
 company = "TomTom"
 bio = "Dominik Plichta is a software architect at TomTom. His interests are problem-solving, architecture, distributed computing, and digital maps. He's been working on digital maps processing systems, mobile games, front-end applications, and PLM software."
-photo = "speakers/dominik_plichta.jpg"
+photo = "dominik_plichta.jpg"

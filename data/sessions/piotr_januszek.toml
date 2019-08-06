@@ -5,8 +5,8 @@ track = ""
 tags = ["microservices", "agile", "quality"]
 
 # [opengraph]
-# fb = "speakers/willy_picard-og.png"
-# twitter = "speakers/willy_picard-og-sq.png"
+# fb = "willy_picard-og.png"
+# twitter = "willy_picard-og-sq.png"
 
 
 [speakers]
@@ -14,4 +14,4 @@ name = "Piotr Januszek"
 role = "Engineering Manager"
 company = "Egnyte"
 bio = "Piotr Januszek is an Engineering Manager in Egnyte located in Poznan, with a very strong QA background. He started his career as a developer, to then move towards a QA career with full technical understanding of systems he worked on. His over 10 years of experience for companies all over Europe helped him to get a deep understanding of both QA and development processes. This lead to achieving up to tripling the speed of software releases without significant reduction of end product."
-photo = "speakers/piotr_januszek.jpg"    
+photo = "piotr_januszek.jpg"    

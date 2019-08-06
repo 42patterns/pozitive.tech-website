@@ -5,12 +5,12 @@ track = ""
 tags = ["architecture"]
 
 [opengraph]
-fb = "speakers/michal_jawulski-og.png"
-twitter = "speakers/michal_jawulski-og-sq.png"
+fb = "michal_jawulski-og.png"
+twitter = "michal_jawulski-og-sq.png"
 
 [speakers]
 name = "Michal Jawulski"
 role = "Senior Java Script Developer"
 company = "Capgemini"
 bio = "For over 7 years, he has been creating and designing systems for financial companies from all over the world. He likes to learn new technologies and is passionate about software engineering. In the evenings, he develops his own projects with new technological novelties. All the time associated with Wroclaw.  First, he graduated from the University of Technology and is currently working at the Capgemini branch in Wroclaw. In addition, he is a Premier League fan who relaxes while playing in FIFA."
-photo = "speakers/michal_jawulski.jpg"
+photo = "michal_jawulski.jpg"

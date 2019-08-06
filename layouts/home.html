@@ -58,7 +58,7 @@
                             {{ range first 3 (sort .Site.Data.sessions "track" "desc" "speakers.name") }}
                                 <div class="speaker">
                                     <h4>{{ .speakers.name }}</h4>
-                                    <img src="{{ $baseUrl }}/images/{{ .speakers.photo }}">
+                                    <img src="{{ $baseUrl }}/speakers/images/{{ .speakers.photo }}">
                                     <h5>#{{ index .tags 0 | urlize }}</h5>
                                 </div>
                             {{ end }}
