@@ -1,8 +1,8 @@
 title = "Experiment, don't argue: or how I learned to stop worrying and love experimenting in production"
 language = "en"
-abstract = ""
+abstract = "The classic way to develop IT solutions is based on the concept of feature specification: the expected behavior of the IT solution is defined together with and for the customer. This approach relies on the belief that the customer knows that customers need. Agile methodologies assume that this belief can be partially wrong and that customers will change their mind in time. In this presentation, we will present a different approach to develop IT solutions in which the specifications are driven by the actual interactions of the customers with the system and not by the partial knowledge of the customer. As an example of this approach, the development of machine learning-powered features for Egnyte solutions will be presented."
 track = ""
-tags = ["microservices", "agile", "quality"]
+tags = ["agile", "quality", "machine learning"]
 
 [opengraph]
 fb = "speakers/willy_picard-og.png"
