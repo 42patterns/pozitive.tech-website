@@ -642,26 +642,26 @@ nav li {
     z-index: -1; } }
 
 .location__index_section {
-  background-color: #1bacb1; }
-  @media (min-width: 767px) {
-    .location__index_section {
-      min-height: 80%; } }
-
-.location__index_section .address {
-  background-color: #002b38; }
-  @media (min-width: 767px) {
-    .location__index_section .address {
-      min-height: 25em; } }
-  .location__index_section .address .location {
-    font-size: 1.2rem; }
-
-.location__index_section .map {
-  overflow: hidden; }
-  @media (min-width: 767px) {
-    .location__index_section .map {
-      position: absolute;
-      left: 50%;
-      transform: translateY(-72%); } }
+  color: white; }
+  .location__index_section {
+    background-color: #1bacb1; }
+    @media (min-width: 767px) {
+      .location__index_section {
+        min-height: 80%; } }
+  .location__index_section .address {
+    background-color: #002b38; }
+    @media (min-width: 767px) {
+      .location__index_section .address {
+        min-height: 25em; } }
+    .location__index_section .address .location {
+      font-size: 1.2rem; }
+  .location__index_section .map {
+    overflow: hidden; }
+    @media (min-width: 767px) {
+      .location__index_section .map {
+        position: absolute;
+        left: 50%;
+        transform: translateY(-72%); } }
 
 .partners__index_section {
   padding-bottom: 10rem; }
