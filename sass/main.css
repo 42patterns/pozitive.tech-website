@@ -22,6 +22,27 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
   text-transform: lowercase; }
 
+img {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+section {
+  color: #616161; }
+  section h1, section h2, section h3, section h4, section h5 {
+    text-transform: capitalize; }
+  section img[src*="city-images"] {
+    border: 1px solid #002b38;
+    border-radius: 4px;
+    padding: 0.3em;
+    margin: 0 1em 1em 1em;
+    float: right; }
+    @media (max-width: 767px) {
+      section img[src*="city-images"] {
+        max-width: 100%;
+        height: auto;
+        margin: 1em auto; } }
+
 .content-wrapper {
   position: relative;
   z-index: 1;
