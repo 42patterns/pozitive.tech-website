@@ -1,0 +1,16 @@
+title = "Cyber Threat Intelligence. Practical approach"
+language = "en"
+abstract = "In the 21st century organisations are required to operate in a world which centres on identifying and exploiting opportunities to create value from information. However, this value, as it is identified and enhanced, attracts unwanted attention. From the lone wolf to advanced nation states, adversaries recognise they can also benefit from this information, either through theft or denying its use by others. Many organisations are looking to threat intelligence for this view of their adversaries, but often find it to be ill-defined, costly to buy or produce, and difficult to integrate into decision making, leading to a failure to deliver the expected business aims. I will focus on practical aspects of collecting, processing, analysing and disseminating actionable Threat Intelligence."
+track = ""
+tags = ["security", "threat intelligence"]
+
+# [opengraph]
+# fb = "speakers/jaroslaw_ratajski-og.png"
+# twitter = "speakers/jaroslaw_ratajski-og-sq.png"
+
+[speakers]
+name = "Grzegorz Nowaczyk"
+role = "Head of Threat Intelligence"
+company = "GlaxoSmithKline"
+bio = "Security enthusiast and practitioner. Believe that security is a mindset, not technology. With GSK for over 13 years. Has held several security roles within risk and cyber operations in last decade. Recently responsible for strategy and delivery of Threat Intelligence. Home automation tinker. Triathlete."
+photo = "speakers/grzegorz_nowaczyk.jpg"
