@@ -27,6 +27,12 @@ h1, h2, h3, h4, h5 {
     text-transform: lowercase;
 }   
 
+img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
 section {
     color: $color-content;
 
@@ -34,12 +40,18 @@ section {
         text-transform: capitalize;
     }
 
-    img {
+    img[src*="city-images"] {
         border: 1px solid $color-secondary;
         border-radius: 4px;
         padding: 0.3em;        
-        margin: 1em;
+        margin: 0 1em 1em 1em;
         float: right;
+
+        @media (max-width: 767px) {
+            max-width: 100%;
+            height: auto;
+            margin: 1em auto;
+        }
     }
 
 }
