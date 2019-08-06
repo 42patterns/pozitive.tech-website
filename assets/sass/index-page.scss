@@ -173,6 +173,8 @@
 }
 
 .location__index_section {
+    color: white;
+
     & {
         @extend %base-section;
         background-color: $color-main;
