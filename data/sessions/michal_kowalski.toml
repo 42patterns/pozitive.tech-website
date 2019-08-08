@@ -4,6 +4,10 @@ abstract = " We are surrounded by fancy, highly popular architecture concepts li
 track = ""
 tags = ["architecture", "microservices"]
 
+[opengraph]
+fb = "michal_kowalski-og.png"
+twitter = "michal_kowalski-og-sq.png"
+
 [speakers]
 name = "Michał Kowalski"
 role = "Solution Architect"

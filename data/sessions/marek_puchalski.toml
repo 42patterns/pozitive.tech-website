@@ -4,6 +4,11 @@ abstract = "There seems to be a lot of confusion and disinformation about what s
 track = ""
 tags = ["security", "architecture"]
 
+
+[opengraph]
+fb = "marek_puchalski-og.png"
+twitter = "marek_puchalski-og-sq.png"
+
 [speakers]
 name = "Marek Puchalski"
 role = "Senior Managing Software Architect"
