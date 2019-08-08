@@ -1,0 +1,17 @@
+title = "From RPA to AI: How to make a company smarter and faster"
+language = "en"
+abstract = "Robotic Process Automation (RPA) is one of the most effective and transparent IT technologies today. It’s as simple as useful. However, It’s worth considering adding some intelligence into it. In the world more and more open for AI, robots are getting even smarter, making the Digital Transformation dream come true."
+track = ""
+tags = ["artificial intelligence", "robotics"]
+
+# [opengraph]
+# fb = "michal_kowalski-og.png"
+# twitter = "michal_kowalski-og-sq.png"
+
+[speakers]
+name = "Paweł Satalecki"
+role = "Business Development Manager"
+company = "Sii"
+bio = "A professional manager with a proven track record in technology, capital markets, and communication. He worked for the leaders in their areas, such as Asseco Poland, Franklin Templeton or Kulczyk Holding. He supported a number of start-ups in their seed and post-seed development. In Sii, he helps organizations create and implement digital transformation strategies, with a focus on business process automation and innovative software technologies. Business strategists and disruptive thinker. Privately a big fan of cycling, basketball, nature, and literature."
+photo = "pawel_satalecki.jpg"
+
