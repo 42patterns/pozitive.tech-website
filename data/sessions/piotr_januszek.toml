@@ -4,10 +4,9 @@ abstract = "Technical debt is an integral part of software development - it's sa
 track = ""
 tags = ["microservices", "agile", "quality"]
 
-# [opengraph]
-# fb = "willy_picard-og.png"
-# twitter = "willy_picard-og-sq.png"
-
+[opengraph]
+fb = "piotr_januszek-og.png"
+twitter = "piotr_januszek-og-sq.png"
 
 [speakers]
 name = "Piotr Januszek"
