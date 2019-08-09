@@ -9,7 +9,7 @@ fb = "willy_picard-og.png"
 twitter = "willy_picard-og-sq.png"
 
 
-[speakers]
+[[speakers]]
 name = "Willy Picard"
 role = "Head of the Datalab"
 company = "Egnyte"

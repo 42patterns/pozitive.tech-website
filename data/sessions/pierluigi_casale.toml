@@ -8,7 +8,7 @@ tags = ["data science" , "artifical intelligence"]
 fb = "pierluigi_casale-og.png"
 twitter = "pierluigi_casale-og-sq.png"
 
-[speakers]
+[[speakers]]
 name = "Pierluigi Casale"
 role = "Group Data Scientist"
 company = "TomTom"

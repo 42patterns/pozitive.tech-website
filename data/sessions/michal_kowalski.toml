@@ -8,7 +8,7 @@ tags = ["architecture", "microservices"]
 fb = "michal_kowalski-og.png"
 twitter = "michal_kowalski-og-sq.png"
 
-[speakers]
+[[speakers]]
 name = "Michał Kowalski"
 role = "Solution Architect"
 company = "Sii"

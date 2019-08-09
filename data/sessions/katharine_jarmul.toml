@@ -5,7 +5,7 @@ abstract = ""
 track = "keynote"
 tags = ["privacy", "artifical intelligence", "keynote"]
 
-[speakers]
+[[speakers]]
 name = "Katharine Jarmul"
 role = "Privacy Advocate"
 company = ""

@@ -8,7 +8,7 @@ tags = ["security", "threat intelligence"]
 fb = "grzegorz_nowaczyk-og.png"
 twitter = "grzegorz_nowaczyk-og-sq.png"
 
-[speakers]
+[[speakers]]
 name = "Grzegorz Nowaczyk"
 role = "Head of Threat Intelligence"
 company = "GlaxoSmithKline"

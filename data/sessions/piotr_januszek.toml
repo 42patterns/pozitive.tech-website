@@ -8,7 +8,7 @@ tags = ["microservices", "agile", "quality"]
 fb = "piotr_januszek-og.png"
 twitter = "piotr_januszek-og-sq.png"
 
-[speakers]
+[[speakers]]
 name = "Piotr Januszek"
 role = "Engineering Manager"
 company = "Egnyte"

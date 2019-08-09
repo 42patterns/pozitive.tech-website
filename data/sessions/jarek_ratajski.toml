@@ -8,7 +8,7 @@ tags = ["architecture", "programming languages"]
 fb = "jaroslaw_ratajski-og.png"
 twitter = "jaroslaw_ratajski-og-sq.png"
 
-[speakers]
+[[speakers]]
 name = "Jarek Ratajski"
 role = "Anarchitect"
 company = ""

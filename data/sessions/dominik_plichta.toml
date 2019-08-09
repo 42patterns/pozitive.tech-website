@@ -11,7 +11,7 @@ tags = ["architecture", "data"]
 fb = "dominik_plichta-og.png"
 twitter = "dominik_plichta-og-sq.png"
 
-[speakers]
+[[speakers]]
 name = "Dominik Plichta"
 role = "Senior Architect"
 company = "TomTom"

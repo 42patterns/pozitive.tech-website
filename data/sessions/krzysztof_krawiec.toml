@@ -8,7 +8,7 @@ tags = ["artifical intelligence", "keynote"]
 fb = "krzysztof_krawiec-og.png"
 twitter = "krzysztof_krawiec-og-sq.png"
 
-[speakers]
+[[speakers]]
 name = "Krzysztof Krawiec"
 role = "Professor of Computer Science"
 company = "Poznań University of Technology"

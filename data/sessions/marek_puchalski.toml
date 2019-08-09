@@ -9,7 +9,7 @@ tags = ["security", "architecture"]
 fb = "marek_puchalski-og.png"
 twitter = "marek_puchalski-og-sq.png"
 
-[speakers]
+[[speakers]]
 name = "Marek Puchalski"
 role = "Senior Managing Software Architect"
 company = "Capgemini"

@@ -8,7 +8,7 @@ tags = ["data science" , "smart city"]
 fb = "michal_lakomski-og.png"
 twitter = "michal_lakomski-og-sq.png"
 
-[speakers]
+[[speakers]]
 name = "Michal Łakomski"
 role = "Mayor's Proxy for Smart City, City of Poznan"
 company = ""

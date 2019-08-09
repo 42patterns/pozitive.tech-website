@@ -8,7 +8,7 @@ tags = ["architecture"]
 fb = "michal_jawulski-og.png"
 twitter = "michal_jawulski-og-sq.png"
 
-[speakers]
+[[speakers]]
 name = "Michal Jawulski"
 role = "Senior Java Script Developer"
 company = "Capgemini"

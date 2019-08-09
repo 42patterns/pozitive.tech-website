@@ -8,7 +8,7 @@ tags = ["artificial intelligence", "robotics"]
 # fb = "michal_kowalski-og.png"
 # twitter = "michal_kowalski-og-sq.png"
 
-[speakers]
+[[speakers]]
 name = "Paweł Satalecki"
 role = "Business Development Manager"
 company = "Sii"

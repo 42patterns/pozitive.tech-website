@@ -21,18 +21,24 @@
                         <div class="jumbotron text-center">
                             <!-- animated hiding -->
                             <div class="" data-animation="fadeInLeft" data-delay="500">
-                                <h1>{{ .session.speakers.name }}</h1>
+                                <h1>
+                                {{ range .session.speakers }}
+                                    <span>{{ .name }}</span>
+                                {{ end }}
+                                </h1>
                             </div>
                         </div>
                     </div>                    
                 </section>
                 <!-- End Top Section -->
 
-                <section id="speaker" class="speaker__section">
-                    <div class="container speaker my-5 d-flex flex-column flex-md-row">
+                <section id="session" class="session__section">
+                    <div class="container session my-5 d-flex flex-column flex-md-row">
                         <div class="d-flex flex-column mx-auto">
                             <div class="photo mr-1 col-4 p-0 text-left">
-                                <img src="/speakers/images/{{ .session.speakers.photo }}">
+                                {{ range .session.speakers }}
+                                <img src="/speakers/images/{{ .photo }}">
+                                {{ end }}
                             </div>
                             <div class="tags">
                             {{ range .session.tags }}
@@ -43,25 +49,32 @@
                         <div>
                             <div class="description">
                                 <div class="h-100 d-flex flex-column">
-                                    <div class="name text-nowrap">
-                                        <h4>
-                                            {{ .session.speakers.name }}
+                                    <div class="name">
+                                        <h3>
+                                            {{.session.title}} 
                                             {{ with (eq .session.language "pl") }}
                                                 &#x1F1F5;&#x1F1F1;
                                             {{ end }}
                                             {{ with (eq .session.language "en") }}
                                                 &#x1f1ec;&#x1f1e7;
                                             {{ end }}
-                                        </h4>
+                                        </h3>
+                                    </div>           
+                                    {{ range .session.speakers }}
+                                    <div class="speaker">
+                                        <h4>{{ .name }}</h4>
                                         <div class="role">
-                                            {{ .session.speakers.role }}{{ with .session.speakers.company }} at {{.}}{{end}}
+                                            {{ .role }}{{ with .company}} at {{.}}{{end}}
                                         </div>
-                                    </div>                                    
-                                    <div class="bio">
-                                        <span>
-                                            {{ .session.speakers.bio }}
-                                        </span>
-                                    </div>    
+                                        <div class="bio">
+                                            <span>
+                                                {{ .bio }}
+                                            </span>            
+                                        </div>
+                                    </div>
+                                    {{ end }}
+                         
+    
                                     {{ if .session.title }}
                                     <div class="session">
                                         <h5>{{ .session.title }}</h5>
