@@ -68,7 +68,7 @@
                                         </div>
                                         <div class="bio">
                                             <span>
-                                                {{ .bio }}
+                                                {{ .bio | replaceRE "[\n\r]" "<br />" }}
                                             </span>            
                                         </div>
                                     </div>
@@ -79,7 +79,7 @@
                                     <div class="session">
                                         <h5>{{ .session.title }}</h5>
                                         <div class="abstract">
-                                            {{ .session.abstract }}
+                                            {{ .session.abstract | replaceRE "[\n\r]" "<br />" }}
                                         </div>
                                     </div>
                                     {{ end }}
