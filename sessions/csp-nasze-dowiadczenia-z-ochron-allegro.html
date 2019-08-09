@@ -6,25 +6,25 @@
         <meta charset="utf-8">
 <meta name="viewport"
     content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title> Distributed architectures - behind the hype  | pozitive technologies 2019 | Poznań</title>
+<title> CSP - nasze doświadczenia z ochroną Allegro  | pozitive technologies 2019 | Poznań</title>
 
 <meta name="author" content="pozitive technologies">
-<meta name="description" content=" Distributed architectures - behind the hype | pozitive technologies 2019 | Poznań">
+<meta name="description" content=" CSP - nasze doświadczenia z ochroną Allegro | pozitive technologies 2019 | Poznań">
 <meta name="keywords" content="Software architecture, artificial intelligence, machine learning, software engineering">
 
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@poztivietech">
-<meta name="twitter:title" content=" Distributed architectures - behind the hype  | pozitive technologies 2019 | Poznań">
-<meta name="twitter:image" content="https://pozitive.tech/speakers/images/michal_kowalski-og-sq.png">
-<meta name="twitter:description" content=" We are surrounded by fancy, highly popular architecture concepts like microservices, cloud, lambdas, etc. Is this something more than just a hype-driven development? Should we drop all we learned through the years in favor of those new shiny approaches? How to design our systems in 2019 effectively? In this talk, I&#39;d like to dive into some of the modern approaches and demystify the hype behind them. If you&#39;d like to hear about practical aspects instead of technology marketing, this talk is just for you! Not only for architects &amp; developers.">
+<meta name="twitter:title" content=" CSP - nasze doświadczenia z ochroną Allegro  | pozitive technologies 2019 | Poznań">
+<meta name="twitter:image" content="https://pozitive.tech/images/social/opengraph-twitter.png">
+<meta name="twitter:description" content="W Allegro chcieliśmy pozbyć się XSSów. Aby to osiągnąć wdrożyliśmy wiele warstw bezpieczeństwa. Jedną z nich jest CSP (Content Security Policy). Teoretycznie prosta sprawa. W praktyce okazuje się, że przeglądarki różnie interpretują te same polityki. A co w przypadku architektury mikroserwisowej gdzie liczba usług dobija do 1000? Co ze skryptami reklamowymi, trackingowymi czy jakimikolwiek z zewnętrznych źródeł? Czy daną politykę da się obejść? Czy warto się w to pakować? Możemy wam jedynie pokazać pytania, które napotkaliśmy u nas - odpowiedzi mogą być inne w zależności od organizacji. Na przykładzie Allegro pokażemy jak wdrożyliśmy CSP w taki sposób, aby móc je z czasem utwardzać i jednocześnie nie zepsuć niczego dla użytkowników.">
 
 
-<meta property="og:title"  content=" Distributed architectures - behind the hype  | pozitive.tech 2019 | Poznań">
+<meta property="og:title"  content=" CSP - nasze doświadczenia z ochroną Allegro  | pozitive.tech 2019 | Poznań">
 <meta property="og:site_name" content="pozitive.tech 2019 | Poznań">
 <meta property="og:type" content="website">
-<meta property="og:description" content=" We are surrounded by fancy, highly popular architecture concepts like microservices, cloud, lambdas, etc. Is this something more than just a hype-driven development? Should we drop all we learned through the years in favor of those new shiny approaches? How to design our systems in 2019 effectively? In this talk, I&#39;d like to dive into some of the modern approaches and demystify the hype behind them. If you&#39;d like to hear about practical aspects instead of technology marketing, this talk is just for you! Not only for architects &amp; developers.">
-<meta property="og:image" content="https://pozitive.tech/speakers/images/michal_kowalski-og.png">
+<meta property="og:description" content="W Allegro chcieliśmy pozbyć się XSSów. Aby to osiągnąć wdrożyliśmy wiele warstw bezpieczeństwa. Jedną z nich jest CSP (Content Security Policy). Teoretycznie prosta sprawa. W praktyce okazuje się, że przeglądarki różnie interpretują te same polityki. A co w przypadku architektury mikroserwisowej gdzie liczba usług dobija do 1000? Co ze skryptami reklamowymi, trackingowymi czy jakimikolwiek z zewnętrznych źródeł? Czy daną politykę da się obejść? Czy warto się w to pakować? Możemy wam jedynie pokazać pytania, które napotkaliśmy u nas - odpowiedzi mogą być inne w zależności od organizacji. Na przykładzie Allegro pokażemy jak wdrożyliśmy CSP w taki sposób, aby móc je z czasem utwardzać i jednocześnie nie zepsuć niczego dla użytkowników.">
+<meta property="og:image" content="https://pozitive.tech/images/social/opengraph-pozitive-technologies.png">
 
 
 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
@@ -126,7 +126,9 @@ gtag('config', 'UA-143166840-1');
                             <div class="" data-animation="fadeInLeft" data-delay="500">
                                 <h1>
                                 
-                                    <span>Michał Kowalski</span>
+                                    <span>Wojtek Lesicki</span>
+                                
+                                    <span>Paweł Czubachowski</span>
                                 
                                 </h1>
                             </div>
@@ -140,12 +142,14 @@ gtag('config', 'UA-143166840-1');
                         <div class="d-flex flex-column mx-auto">
                             <div class="photo mr-1 col-4 p-0 text-left">
                                 
-                                <img src="/speakers/images/michal_kowalski.jpg">
+                                <img src="/speakers/images/wojciech_lesicki.jpg">
+                                
+                                <img src="/speakers/images/pawel_czubachowski.jpg">
                                 
                             </div>
                             <div class="tags">
                             
-                                <span>#architecture</span>
+                                <span>#security</span>
                             
                                 <span>#microservices</span>
                             
@@ -156,22 +160,34 @@ gtag('config', 'UA-143166840-1');
                                 <div class="h-100 d-flex flex-column">
                                     <div class="name">
                                         <h3>
-                                            Distributed architectures - behind the hype 
+                                            CSP - nasze doświadczenia z ochroną Allegro 
                                             
+                                                &#x1F1F5;&#x1F1F1;
                                             
-                                                &#x1f1ec;&#x1f1e7;
                                             
                                         </h3>
                                     </div>           
                                     
                                     <div class="speaker">
-                                        <h4>Michał Kowalski</h4>
+                                        <h4>Wojtek Lesicki</h4>
                                         <div class="role">
-                                            Solution Architect at Sii
+                                            IT Security Team Leader at Allegro
                                         </div>
                                         <div class="bio">
                                             <span>
-                                                Programmer, technology enthusiast & homegrown Linux evangelist. Fan of simplicity and Software Craftsmanship approach. If he could, he would write a unit test even for this description. He combines experience with working on distributed applications, Big Data & stream processing, with security background in his everyday work as a Solution Architect at Sii Poznań. Interested in all aspects of making working software - starting from code, through the architecture up to the production deployments. When not writing about himself in the third person, he is probably riding a bike or cooking.
+                                                Team Leader w dziale IT Security. Kiedyś odpowiedzialny za rozwiązania cloud (OpenStack, AWS itp.) i konteneryzacji (Mesos/Marathon). Aktualnie skupia się na obronie całości platformy Allegro, bezpieczeństwie procesu wdrożeniowego, pentestach oraz oraz na projektach związanych z bezpieczeństwem całej firmy. Współpracuje z developerami i biznesem szukając tego, co można zrobić, by było bardziej bezpiecznie. Uwielbia wszelkie możliwości ulepszania produktów/rozwiązań/technologii. Od niedawna działa również by w rodzimym Poznaniu propagować wiedzę odnośnie IT security. W czasie wolnym chodzi po górach.
+                                            </span>            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="speaker">
+                                        <h4>Paweł Czubachowski</h4>
+                                        <div class="role">
+                                            Security Specialist at Allegro
+                                        </div>
+                                        <div class="bio">
+                                            <span>
+                                                Pracuję w allegro w zespole bezpieczeństwa webaplikacji, gdzie zajmuję się testami penetracyjnymi oraz automatyzacją narzędzi i procesów wspomagających pracę zespołu bezpieczeństwa. Jako bug hunter pomagam także dbać o bezpieczeństwo innych organizacji. Od czasu do czasu podddaję się stresowi, występując z publiczną prezentacją.
                                             </span>            
                                         </div>
                                     </div>
@@ -180,9 +196,9 @@ gtag('config', 'UA-143166840-1');
     
                                     
                                     <div class="session">
-                                        <h5>Distributed architectures - behind the hype</h5>
+                                        <h5>CSP - nasze doświadczenia z ochroną Allegro</h5>
                                         <div class="abstract">
-                                             We are surrounded by fancy, highly popular architecture concepts like microservices, cloud, lambdas, etc. Is this something more than just a hype-driven development? Should we drop all we learned through the years in favor of those new shiny approaches? How to design our systems in 2019 effectively? In this talk, I'd like to dive into some of the modern approaches and demystify the hype behind them. If you'd like to hear about practical aspects instead of technology marketing, this talk is just for you! Not only for architects & developers.
+                                            W Allegro chcieliśmy pozbyć się XSSów. Aby to osiągnąć wdrożyliśmy wiele warstw bezpieczeństwa. Jedną z nich jest CSP (Content Security Policy). Teoretycznie prosta sprawa. W praktyce okazuje się, że przeglądarki różnie interpretują te same polityki. A co w przypadku architektury mikroserwisowej gdzie liczba usług dobija do 1000? Co ze skryptami reklamowymi, trackingowymi czy jakimikolwiek z zewnętrznych źródeł? Czy daną politykę da się obejść? Czy warto się w to pakować? Możemy wam jedynie pokazać pytania, które napotkaliśmy u nas - odpowiedzi mogą być inne w zależności od organizacji. Na przykładzie Allegro pokażemy jak wdrożyliśmy CSP w taki sposób, aby móc je z czasem utwardzać i jednocześnie nie zepsuć niczego dla użytkowników.
                                         </div>
                                     </div>
                                     

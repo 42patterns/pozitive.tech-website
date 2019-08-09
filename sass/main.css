@@ -440,51 +440,54 @@ nav li {
     .jumbotron {
       padding-bottom: 0; } }
 
-.speaker__section {
+.session__section {
   color: #1bacb1; }
-  .speaker__section .speaker h1, .speaker__section .speaker h2, .speaker__section .speaker h3, .speaker__section .speaker h4, .speaker__section .speaker h5 {
+  .session__section .session h1, .session__section .session h2, .session__section .session h3, .session__section .session h4, .session__section .session h5 {
     text-transform: capitalize; }
-  .speaker__section .speaker .name {
+  .session__section .session .speaker h4 {
+    color: #002b38; }
+  .session__section .session .name {
     margin-top: 0 !important; }
-  .speaker__section .speaker .photo {
+  .session__section .session .photo {
     margin-bottom: 1em; }
-    .speaker__section .speaker .photo img {
+    .session__section .session .photo img {
       border: 2px solid #1bacb1;
+      margin-bottom: 1em;
       height: 350px;
       width: 350px; }
-  .speaker__section .speaker .tags span {
+  .session__section .session .tags span {
     font-weight: 700;
     font-size: 0.8em; }
-  .speaker__section .speaker .description > div {
+  .session__section .session .description > div {
     padding-left: 0.5em;
     background-color: white;
     opacity: 0.8; }
     @media (min-width: 767px) {
-      .speaker__section .speaker .description > div {
+      .session__section .session .description > div {
         padding-left: 1.5em;
         padding-right: 1em; } }
-  .speaker__section .speaker .description > * > div {
+  .session__section .session .description > * > div {
     margin-top: 0.5em;
     margin-bottom: 1.5em; }
-  .speaker__section .speaker .role {
+  .session__section .session .role {
     font-size: 0.9em;
-    color: #616161; }
-  .speaker__section .speaker .bio {
-    font-size: 0.8em;
     font-weight: 700;
     color: #616161; }
-  .speaker__section .speaker .session {
+  .session__section .session .bio {
+    font-size: 0.8em;
+    color: #616161; }
+  .session__section .session .session {
     border: 1px solid #1bacb1;
     padding-left: 0.6em;
     padding-top: 0.3em;
     padding-right: 0.3em;
     padding-bottom: 0.3em; }
-    .speaker__section .speaker .session h5 {
+    .session__section .session .session h5 {
       border-left: 3px solid #1bacb1;
       color: #002b38;
       font-size: 1.2em;
       padding-left: 0.6em; }
-    .speaker__section .speaker .session .abstract {
+    .session__section .session .session .abstract {
       margin-top: 1em;
       font-size: 0.9em;
       color: #616161; }
