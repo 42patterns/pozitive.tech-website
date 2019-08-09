@@ -1,0 +1,23 @@
+title = "CSP - nasze doświadczenia z ochroną Allegro"
+language = "pl"
+abstract = "W Allegro chcieliśmy pozbyć się XSSów. Aby to osiągnąć wdrożyliśmy wiele warstw bezpieczeństwa. Jedną z nich jest CSP (Content Security Policy). Teoretycznie prosta sprawa. W praktyce okazuje się, że przeglądarki różnie interpretują te same polityki. A co w przypadku architektury mikroserwisowej gdzie liczba usług dobija do 1000? Co ze skryptami reklamowymi, trackingowymi czy jakimikolwiek z zewnętrznych źródeł? Czy daną politykę da się obejść? Czy warto się w to pakować? Możemy wam jedynie pokazać pytania, które napotkaliśmy u nas - odpowiedzi mogą być inne w zależności od organizacji. Na przykładzie Allegro pokażemy jak wdrożyliśmy CSP w taki sposób, aby móc je z czasem utwardzać i jednocześnie nie zepsuć niczego dla użytkowników."
+track = ""
+tags = ["security", "microservices"]
+
+# [opengraph]
+# fb = "dominik_plichta-og.png"
+# twitter = "dominik_plichta-og-sq.png"
+
+[[speakers]]
+name = "Wojtek Lesicki"
+role = "IT Security Team Leader"
+company = "Allegro"
+bio = "Team Leader w dziale IT Security. Kiedyś odpowiedzialny za rozwiązania cloud (OpenStack, AWS itp.) i konteneryzacji (Mesos/Marathon). Aktualnie skupia się na obronie całości platformy Allegro, bezpieczeństwie procesu wdrożeniowego, pentestach oraz oraz na projektach związanych z bezpieczeństwem całej firmy. Współpracuje z developerami i biznesem szukając tego, co można zrobić, by było bardziej bezpiecznie. Uwielbia wszelkie możliwości ulepszania produktów/rozwiązań/technologii. Od niedawna działa również by w rodzimym Poznaniu propagować wiedzę odnośnie IT security. W czasie wolnym chodzi po górach."
+photo = "wojciech_lesicki.jpg"
+
+[[speakers]]
+name = "Paweł Czubachowski"
+role = "Security Specialist"
+company = "Allegro"
+bio = "Pracuję w allegro w zespole bezpieczeństwa webaplikacji, gdzie zajmuję się testami penetracyjnymi oraz automatyzacją narzędzi i procesów wspomagających pracę zespołu bezpieczeństwa. Jako bug hunter pomagam także dbać o bezpieczeństwo innych organizacji. Od czasu do czasu podddaję się stresowi, występując z publiczną prezentacją."
+photo = "pawel_czubachowski.jpg"
