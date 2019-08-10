@@ -1,0 +1,31 @@
+<div class="agenda-element">
+{{ if .session }}
+    <div class="title">
+    {{ $filePath := printf "/sessions/%s.html" (.session.title | replaceRE "[ęóąśłżźćń]" "" | urlize) }}
+    <a  href="{{ $filePath }}">{{ .session.title }}</a>
+    </div>
+    <div class="tags">
+        {{ range .session.tags }}
+        <span>#{{ . | urlize }}</span>
+        {{ end }}
+    </div>
+
+    <div class="speakers">
+    {{ range $speaker := .session.speakers }}
+        <strong>{{ $speaker.name }}</strong>
+    {{ end }}
+    {{ partial "language-flag.html" (dict "language" .session.language)}}
+    </div>
+    <div class="collapse multi-collapse-{{.agendaTitle}}" id="{{ .agendaTitle }}">
+        <div class="abstract card card-body">
+            {{ .session.abstract }}
+        </div>
+    </div>
+{{ else }}
+    {{ .agendaTitle }}
+    <br />
+    {{ range $speaker := .speakers }}
+        <a  href="{{ $speaker.Permalink }}"><strong>{{ $speaker.Params.speakername }}</strong></a>
+    {{ end }}
+{{ end }}
+</div>

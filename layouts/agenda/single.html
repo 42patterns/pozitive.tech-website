@@ -1,0 +1,57 @@
+{{ define "main" }}
+<section id="agenda" class="agenda__section">
+    <div class="container text-center py-5">
+
+        {{ $sessions := .Site.Data.sessions }}
+        {{ $agenda := .Params.agenda }}
+
+        <div class="container-fluid">
+            {{ range $dayIndex, $details := $agenda }}
+            <div class="agenda-day">
+                {{ if gt (len $agenda) 1 }}
+                <h3>Dzień #{{ $dayIndex }} </h3>
+                {{ end }}    
+                <div class="row header d-none d-md-flex">
+                    <div class="col-md-2">&nbsp;</div>
+                    {{ range $track := $details.tracks }}    
+                    <div class="col-md-{{ div 10 (len $details.tracks) }} text-center">{{ $track }}</div>
+                    {{ end }}
+                </div>
+                {{ range $slot := $details.slots }}    
+                    {{ range $hour,$presentations := $slot }}            
+                    <div class="row">
+                        <div class="col-md-2 d-none d-md-block">{{ $hour }}</div>                
+                        <div class="col-12 col-sm-12 d-md-none align-self-stretch mobile-hour lead">{{ $hour }}</div>
+        
+                        {{ $singleSlot := eq (len $presentations) 1 }}
+                        {{ if $singleSlot }}
+                        {{ $p := index ($presentations) 0 }}
+                        {{ $session := index $sessions $p }}
+                        <div class="col-12 col-md-10 text-center"
+                            title="Click for more details"
+                            data-toggle="collapse" data-target=".multi-collapse-{{$p}}" 
+                            aria-expanded="false" aria-controls="{{ range $presentations }}{{.}}{{end}}">
+                            {{ partial "agenda-element.html" (dict "session" $session "agendaTitle" $p ) }}    
+                        </div>
+                        {{ else }}
+                        {{ range $i, $p := $presentations }}
+                            {{ $session := index $sessions $p }}
+                            <div class="col-3 pr-0 d-md-none flex-fill"><small>{{ index ($details.tracks) $i }}</small></div>
+                            <div class="col-9 col-md-{{ div 10 (len $details.tracks) }} text-center"
+                                title="Click for more details"
+                                data-toggle="collapse" data-target=".multi-collapse-{{$p}}" 
+                                aria-expanded="false" aria-controls="{{ range $presentations }}{{.}}{{end}}">
+                            {{ partial "agenda-element.html" (dict "session" $session "agendaTitle" $p ) }}
+                            </div>
+                            <div class="col-12 d-md-none mobile-track"></div>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>  
+</section>
+{{ end }}

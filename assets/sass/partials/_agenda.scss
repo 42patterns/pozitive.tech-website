@@ -1,0 +1,46 @@
+.agenda__section {
+   
+    h3 {
+      padding: 0.4em;
+    }
+    
+    .header {
+        background-color: #fafafa;
+        border-top: 1px solid #dee2e6;
+        border-bottom: 2px solid #dee2e6;
+    }      
+
+    .row {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid #e8eff7;
+    
+      &:hover:not(.header) {
+        background: #f5f5f5;
+      }
+  
+      &:last-child {
+        margin-bottom: 30px;
+        border-bottom: 3px solid #dee2e6;
+      }  
+
+      .mobile-hour {
+        padding-bottom: 10px;  
+        border-bottom: 1px dashed #e8eff7;
+      }
+
+      .mobile-track:not(:last-child) {
+        border-bottom: 1px dashed #e8eff7;
+      }
+
+      .agenda-element {
+          .tags {
+              font-size: x-small;
+          }
+          .abstract {
+              font-size: small;
+          }
+      }
+    }
+    
+}

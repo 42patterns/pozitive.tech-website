@@ -51,13 +51,8 @@
                                 <div class="h-100 d-flex flex-column">
                                     <div class="name">
                                         <h3>
-                                            {{.session.title}} 
-                                            {{ with (eq .session.language "pl") }}
-                                                &#x1F1F5;&#x1F1F1;
-                                            {{ end }}
-                                            {{ with (eq .session.language "en") }}
-                                                &#x1f1ec;&#x1f1e7;
-                                            {{ end }}
+                                            {{.session.title}}
+                                            {{ partial "language-flag.html" (dict "language" .session.language) }}
                                         </h3>
                                     </div>           
                                     {{ range .session.speakers }}
