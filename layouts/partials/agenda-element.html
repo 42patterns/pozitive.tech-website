@@ -16,11 +16,13 @@
     {{ end }}
     {{ partial "language-flag.html" (dict "language" .session.language)}}
     </div>
+    {{ if .session.abstract }}
     <div class="collapse multi-collapse-{{.agendaTitle}}" id="{{ .agendaTitle }}">
         <div class="abstract card card-body">
             {{ .session.abstract }}
         </div>
     </div>
+    {{ end }}
 {{ else }}
     {{ .agendaTitle }}
     <br />
