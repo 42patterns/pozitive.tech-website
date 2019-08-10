@@ -1,6 +1,5 @@
 ---
 title: speakers
 heroImage: duotone-speakers.jpg
+type: speakers
 ---
-
-<!-- tutaj kontent speakerów -->
