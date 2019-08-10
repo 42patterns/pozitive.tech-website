@@ -30,7 +30,7 @@ agenda:
         - "12:15 - 13:00":
             - Lunch break
         - "13:00 - 13:45":
-            - "Keynote - TBA"
+            - jaroslaw_palka
         - "13:45 - 14:00":
             - Coffee break
         - "14:00 - 14:30":
@@ -50,5 +50,5 @@ agenda:
         - "16:15 - 16:30":
             - Coffee break
         - "16:30 - 17:30":
-            - "Closing keynote: TBA"
+            - katharine_jarmul
 ---
