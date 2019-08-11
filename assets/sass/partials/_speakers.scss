@@ -6,83 +6,75 @@
         h1, h2, h3, h4, h5 {
             text-transform: capitalize;
         }
-    
-        .speaker {
-            h4 {
-                color: $color-secondary;
-            }
-        }
 
-        .name {
-            margin-top: 0 !important;
-        }
-
-        .photo {
-            margin-bottom: 1em;
-
-            img {
-                border: 2px solid $color-main;
-                margin-bottom: 1em;
-                height: 350px;
-                width: 350px;                
-            }    
-        }
-
-        .tags {
-            span {
-                font-weight: $font-extra-bold;
-                font-size: 0.8em;
-            }
-        }
-
-        .description > div {
+        .description {
             padding-left: 0.5em;
-            background-color: white;
-            opacity: 0.8;
 
             @media (min-width : 767px) { 
                 padding-left: 1.5em;
                 padding-right: 1em;    
             }
-        }
-
-        .description > * > div {
-            margin-top: 0.5em;
-            margin-bottom: 1.5em;        
-        }
-
-        .role {
-            font-size: 0.9em;
-            font-weight: $font-extra-bold;
-            color: $color-content;            
-        }
-
-        .bio {
-            font-size: 0.8em;
-            color: $color-content;            
-        }
-
-        .session {
-            border: 1px solid $color-main;
-            padding-left: 0.6em;
-            padding-top: 0.3em;
-            padding-right: 0.3em;
-            padding-bottom: 0.3em;
-
-            h5 {
-                border-left: 3px solid $color-main;
-                color: $color-secondary;
-                font-size: 1.2em;
-                padding-left: 0.6em;
+    
+            .tags {
+                span {
+                    font-weight: $font-extra-bold;
+                    font-size: 0.8em;
+                }
             }
 
+            .name {
+                margin-top: 0 !important;
+    
+                h3.title {
+                    border-left: 3px solid $color-secondary;
+                    padding-left: 0.6em;
+                }    
+            }
+    
             .abstract {
                 margin-top: 1em;
                 font-size: 0.9em;
                 color: $color-content;            
-            }
+            }    
         }
     }
+
+    .speakers {
+        color: $color-content;
+
+        .speaker {
+            @media (min-width : 767px) { 
+                padding-left: 1.5em;
+                padding-right: 1em;    
+            }
+            
+            h4 {
+                color: $color-secondary;
+            }
+
+            .photo {
+                margin-bottom: 1em;
+    
+                img {
+                    border: 2px solid $color-main;
+                    margin-bottom: 1em;
+                    height: 350px;
+                    width: 350px;                
+                }    
+            }
+
+            .role {
+                font-size: 0.9em;
+                font-weight: $font-extra-bold;
+            }
+    
+            .bio {
+                font-size: 0.8em;
+            }
+    
+        }    
+    }
+
 }
 
 .speakers__section {

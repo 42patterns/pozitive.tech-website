@@ -32,55 +32,46 @@
                 </section>
                 <!-- End Top Section -->
 
-                <section id="session" class="session__section">
-                    <div class="container session my-5 d-flex flex-column flex-md-row">
-                        <div class="d-flex flex-column mx-auto">
-                            <div class="photo mr-1 col-4 p-0 text-left">
-                                {{ range .session.speakers }}
-                                <img src="/speakers/images/{{ .photo }}">
-                                {{ end }}
-                            </div>
+                <section id="session" class="session__section py-3">
+                    <div class="container session">
+                        <div class="description">
+                            {{ if .session.title }}
+                            <div class="name">
+                                <h3 class="title">
+                                    {{.session.title}}
+                                    {{ partial "language-flag.html" (dict "language" .session.language) }}
+                                </h3>
+                            </div>       
                             <div class="tags">
                             {{ range .session.tags }}
                                 <span>#{{ . | urlize }}</span>
                             {{ end }}
+                            </div>        
+                            <div class="abstract">
+                                {{ .session.abstract | replaceRE "[\n\r]" "<br />" }}
+                            </div>
+                            {{ end }}                         
+                        </div>
+                    </div>
+                    <div class="container speakers py-3">
+                        {{ range .session.speakers }}
+                        <div class="speaker d-flex flex-column flex-md-row">
+                            <div class="photo text-center">
+                                <img src="/speakers/images/{{ .photo }}">
+                            </div>
+                            <div class="name px-3">
+                                <h4>{{ .name }}</h4>
+                                <div class="role">
+                                    {{ .role }}{{ with .company}} at {{.}}{{end}}
+                                </div>
+                                <div class="bio">
+                                    <span>
+                                        {{ .bio | replaceRE "[\n\r]" "<br />" }}
+                                    </span>            
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="description">
-                                <div class="h-100 d-flex flex-column">
-                                    <div class="name">
-                                        <h3>
-                                            {{.session.title}}
-                                            {{ partial "language-flag.html" (dict "language" .session.language) }}
-                                        </h3>
-                                    </div>           
-                                    {{ range .session.speakers }}
-                                    <div class="speaker">
-                                        <h4>{{ .name }}</h4>
-                                        <div class="role">
-                                            {{ .role }}{{ with .company}} at {{.}}{{end}}
-                                        </div>
-                                        <div class="bio">
-                                            <span>
-                                                {{ .bio | replaceRE "[\n\r]" "<br />" }}
-                                            </span>            
-                                        </div>
-                                    </div>
-                                    {{ end }}
-                         
-    
-                                    {{ if .session.title }}
-                                    <div class="session">
-                                        <h5>{{ .session.title }}</h5>
-                                        <div class="abstract">
-                                            {{ .session.abstract | replaceRE "[\n\r]" "<br />" }}
-                                        </div>
-                                    </div>
-                                    {{ end }}
-                                </div>                        
-                            </div>
-                        </div>                        
+                        {{ end }}
                     </div>
                 </section>
                 
