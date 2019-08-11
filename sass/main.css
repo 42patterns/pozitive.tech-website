@@ -43,6 +43,10 @@ section {
         height: auto;
         margin: 1em auto; } }
 
+#registrationModal h1, #registrationModal h2, #registrationModal h3, #registrationModal h4, #registrationModal h5 {
+  font-size: 1em;
+  color: #1bacb1; }
+
 .content-wrapper {
   position: relative;
   z-index: 1;
@@ -166,9 +170,9 @@ section {
   position: fixed;
   z-index: 500;
   width: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .top-header {
-      padding: 13px 0 0 34px; } }
+      padding: 13px 0 0 0; } }
   .top-header.after-scroll {
     padding-top: 0;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.15); }
@@ -188,17 +192,20 @@ section {
   cursor: pointer;
   color: #8b8b8b;
   transition: all .5s; }
+  @media (min-width: 1024px) {
+    .icon {
+      display: none; } }
 
 .logo-header {
   display: block;
   transform: translateY(20px);
   transition: all 0.3s; }
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     .logo-header {
       transform: translateX(-15px); } }
   .top-header.after-scroll .logo-header {
     transform: translateY(1px); }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
       .top-header.after-scroll .logo-header {
         transform: translateX(-15px); } }
   .logo-header .logo {
@@ -209,7 +216,7 @@ section {
     margin-right: 20px;
     transform: scale(0.7);
     vertical-align: middle; }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
       .logo-header .logo {
         transform: scale(0.6); } }
 
@@ -219,8 +226,11 @@ section {
   margin: 8px 20px 0 -10px;
   transform: scale(0.6);
   vertical-align: middle; }
+  @media (min-width: 1024px) {
+    .logo-navbar {
+      display: none; } }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   nav {
     position: fixed;
     z-index: 100;
@@ -240,12 +250,12 @@ section {
 nav ul {
   float: right;
   margin: 0.4rem 0 0 0;
-  padding: 0 1rem;
+  padding: 0 1rem 0 0;
   list-style: none;
   text-align: left;
   transform: translateY(45px);
   transition: all 0.3s; }
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     nav ul {
       line-height: 20px;
       width: 95%;
@@ -253,7 +263,7 @@ nav ul {
       transform: translateY(0); } }
   .top-header.after-scroll nav ul {
     transform: translateY(20px); }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
       .top-header.after-scroll nav ul {
         transform: translateY(0); } }
 
@@ -261,14 +271,14 @@ nav li {
   display: inline-block;
   padding: 0 8px;
   vertical-align: middle; }
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     nav li {
       display: block; } }
   nav li .btn {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none; }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
       nav li .btn.btn-light {
         color: white !important;
         background-color: #002b38 !important; } }
@@ -281,7 +291,7 @@ nav li {
     transition: all 0.3s;
     text-transform: lowercase;
     color: white; }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
       nav li a {
         font-size: 16px;
         display: block;
@@ -293,17 +303,17 @@ nav li {
     nav li a.current, nav li a:hover {
       text-decoration: none;
       color: #cfcfcf; }
-      @media (max-width: 767px) {
+      @media (max-width: 1023px) {
         nav li a.current, nav li a:hover {
           color: #1bacb1; } }
     .top-header.after-scroll nav li a {
       color: #002b38; }
-      @media (max-width: 767px) {
+      @media (max-width: 1023px) {
         .top-header.after-scroll nav li a {
           top: 20px; } }
       .top-header.after-scroll nav li a.current, .top-header.after-scroll nav li a:hover {
         color: rgba(0, 43, 56, 0.5); }
-        @media (max-width: 767px) {
+        @media (max-width: 1023px) {
           .top-header.after-scroll nav li a.current, .top-header.after-scroll nav li a:hover {
             color: #1bacb1; } }
 
@@ -630,6 +640,7 @@ nav li {
   color: #002b38; }
 
 .registration__index_section .btn {
+  color: white;
   font-weight: 700;
   background-color: #1bacb1;
   border-color: #1bacb1;
