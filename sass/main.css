@@ -457,53 +457,44 @@ nav li {
   color: #1bacb1; }
   .session__section .session h1, .session__section .session h2, .session__section .session h3, .session__section .session h4, .session__section .session h5 {
     text-transform: capitalize; }
-  .session__section .session .speaker h4 {
-    color: #002b38; }
-  .session__section .session .name {
-    margin-top: 0 !important; }
-  .session__section .session .photo {
-    margin-bottom: 1em; }
-    .session__section .session .photo img {
-      border: 2px solid #1bacb1;
-      margin-bottom: 1em;
-      height: 350px;
-      width: 350px; }
-  .session__section .session .tags span {
-    font-weight: 700;
-    font-size: 0.8em; }
-  .session__section .session .description > div {
-    padding-left: 0.5em;
-    background-color: white;
-    opacity: 0.8; }
+  .session__section .session .description {
+    padding-left: 0.5em; }
     @media (min-width: 767px) {
-      .session__section .session .description > div {
+      .session__section .session .description {
         padding-left: 1.5em;
         padding-right: 1em; } }
-  .session__section .session .description > * > div {
-    margin-top: 0.5em;
-    margin-bottom: 1.5em; }
-  .session__section .session .role {
-    font-size: 0.9em;
-    font-weight: 700;
-    color: #616161; }
-  .session__section .session .bio {
-    font-size: 0.8em;
-    color: #616161; }
-  .session__section .session .session {
-    border: 1px solid #1bacb1;
-    padding-left: 0.6em;
-    padding-top: 0.3em;
-    padding-right: 0.3em;
-    padding-bottom: 0.3em; }
-    .session__section .session .session h5 {
-      border-left: 3px solid #1bacb1;
-      color: #002b38;
-      font-size: 1.2em;
-      padding-left: 0.6em; }
-    .session__section .session .session .abstract {
+    .session__section .session .description .tags span {
+      font-weight: 700;
+      font-size: 0.8em; }
+    .session__section .session .description .name {
+      margin-top: 0 !important; }
+      .session__section .session .description .name h3.title {
+        border-left: 3px solid #002b38;
+        padding-left: 0.6em; }
+    .session__section .session .description .abstract {
       margin-top: 1em;
       font-size: 0.9em;
       color: #616161; }
+  .session__section .speakers {
+    color: #616161; }
+    @media (min-width: 767px) {
+      .session__section .speakers .speaker {
+        padding-left: 1.5em;
+        padding-right: 1em; } }
+    .session__section .speakers .speaker h4 {
+      color: #002b38; }
+    .session__section .speakers .speaker .photo {
+      margin-bottom: 1em; }
+      .session__section .speakers .speaker .photo img {
+        border: 2px solid #1bacb1;
+        margin-bottom: 1em;
+        height: 350px;
+        width: 350px; }
+    .session__section .speakers .speaker .role {
+      font-size: 0.9em;
+      font-weight: 700; }
+    .session__section .speakers .speaker .bio {
+      font-size: 0.8em; }
 
 .speakers__section {
   color: #1bacb1; }
