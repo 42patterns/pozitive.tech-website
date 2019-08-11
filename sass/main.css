@@ -285,6 +285,9 @@ nav li {
     nav li .btn.btn-dark {
       color: white !important;
       background-color: #002b38 !important; }
+  @media (max-width: 1023px) {
+    nav li button {
+      margin: 0.4em 1em; } }
   nav li a {
     font-size: 1rem;
     font-weight: 700;
@@ -558,10 +561,12 @@ nav li {
     border-bottom: 1px dashed #e8eff7; }
   .agenda__section .row .mobile-track:not(:last-child) {
     border-bottom: 1px dashed #e8eff7; }
-  .agenda__section .row .agenda-element .tags {
-    font-size: x-small; }
-  .agenda__section .row .agenda-element .abstract {
-    font-size: small; }
+  .agenda__section .row .agenda-element {
+    text-align: left; }
+    .agenda__section .row .agenda-element .tags {
+      font-size: x-small; }
+    .agenda__section .row .agenda-element .abstract {
+      font-size: small; }
 
 .hero__index_section {
   color: #002b38; }
