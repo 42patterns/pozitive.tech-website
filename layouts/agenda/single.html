@@ -36,7 +36,7 @@
                         {{ else }}
                         {{ range $i, $p := $presentations }}
                             {{ $session := index $sessions $p }}
-                            <div class="col-3 pr-0 d-md-none flex-fill"><small>{{ index ($details.tracks) $i }}</small></div>
+                            <div class="col-3 pr-0 d-md-none flex-fill text-left"><small>{{ index ($details.tracks) $i }}</small></div>
                             <div class="col-9 col-md-{{ div 10 (len $details.tracks) }} text-center"
                                 title="Click for more details"
                                 data-toggle="collapse" data-target=".multi-collapse-{{$p}}" 
