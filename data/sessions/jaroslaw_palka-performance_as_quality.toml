@@ -10,6 +10,10 @@ How to start with performance testing, what techniques, tools and skills do we n
 track = "keynote"
 tags = ["architecture", "performance", "quality assurance", "keynote"]
 
+[opengraph]
+fb = "jaroslaw_palka-og.png"
+twitter = "jaroslaw_palka-og-sq.png"
+
 [[speakers]]
 name = "Jarosław Pałka"
 role = "Performance Engineer"

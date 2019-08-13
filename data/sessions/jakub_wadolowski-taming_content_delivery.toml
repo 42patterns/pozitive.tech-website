@@ -10,9 +10,9 @@ During this talk I’d like to present how Cognifide manages platforms composed 
 track = ""
 tags = ["architecture", "cloud" , "microservices"]
 
-# [opengraph]
-# fb = "pierluigi_casale-og.png"
-# twitter = "pierluigi_casale-og-sq.png"
+[opengraph]
+fb = "jakub_wadolowski-og.png"
+twitter = "jakub_wadolowski-og-sq.png"
 
 [[speakers]]
 name = "Jakub Wądołowski"

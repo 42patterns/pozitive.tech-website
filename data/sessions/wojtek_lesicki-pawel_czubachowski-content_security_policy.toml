@@ -4,9 +4,9 @@ abstract = "W Allegro chcieliśmy pozbyć się XSSów. Aby to osiągnąć wdroż
 track = ""
 tags = ["security", "microservices"]
 
-# [opengraph]
-# fb = "dominik_plichta-og.png"
-# twitter = "dominik_plichta-og-sq.png"
+[opengraph]
+fb = "lesicki_czubachowski-og.png"
+twitter = "lesicki_czubachowski-og-sq.png"
 
 [[speakers]]
 name = "Wojtek Lesicki"
