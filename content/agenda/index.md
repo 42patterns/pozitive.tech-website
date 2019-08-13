@@ -26,7 +26,7 @@ agenda:
             - michal_jawulski-reactive
         - "11:45 - 12:15":
             - wojtek_lesicki-pawel_czubachowski-content_security_policy
-            - TBA
+            - jedrzej_serwa-grall_vm
         - "12:15 - 13:00":
             - Lunch break
         - "13:00 - 13:45":
