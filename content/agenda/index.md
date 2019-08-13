@@ -30,7 +30,7 @@ agenda:
         - "12:15 - 13:00":
             - Lunch break
         - "13:00 - 13:45":
-            - jaroslaw_palka
+            - jaroslaw_palka-performance_as_quality
         - "13:45 - 14:00":
             - Coffee break
         - "14:00 - 14:30":

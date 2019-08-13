@@ -1,0 +1,23 @@
+title = "Performance as quality"
+language = "en"
+abstract = """Times change. IT systems have brutally invaded our lives, and software eats humanity for breakfast. In the meantime we carry 8 cores and 8 GB RAM in our pockets. The AMD presented a 12-core processor on the so-called consumer market, and Gmail is still stuck and sluggish when it is scrolled through emails. To edit a text file, we need 2 GB of RAM, and an application, which performs the same functions as IRC in the 90s, devours any amount of CPU and memory. And nobody cares. Hardware is cheaper than programmer's time... right?  Since such words, like cloud or serverless, have dominated any architectural discussion, the lie repeated for years has become truth.
+
+During the presentation, I would like to share with you the answer to the question posed in the title of the presentation: is efficiency quality? How to ensure the performance of your systems? Who is responsible for all this? (will we sadly discover at the end that the HR department?)?
+
+How does all this relate to Krakow's smog?
+
+How to start with performance testing, what techniques, tools and skills do we need to possess? And why "performance man" is the best profession in the world?"""
+track = "keynote"
+tags = ["architecture", "performance", "quality assurance", "keynote"]
+
+[[speakers]]
+name = "Jarosław Pałka"
+role = "Performance Engineer"
+company = "Neo4j"
+bio = """For more than 20 years in the IT industry, as a database administrator, programmer, architect, manager and "onsite disaster engineer".
+
+I took part in small, medium and large projects nonsense, under the principles of "Waterfall", Agile and in the absence of any methodologies, always with the same effect. What led me to the conclusion that no matter what you do, as long how you do it well, in the simplest possible way and use appropriate tools that do the work for you. In the meantime, I fell in love in the ideas of TDD and Software Craftsmanship, to the limits exploring beautiful in its simplicity ideas as REST and NoSQL, only to abandon them to explore the secrets of "systems thinking" and admire the strength that brings "metaphor" and discover that we are all objects in an eternal virtual machine.
+
+Humble follower of the church of JVM, bytecode and JIT researcher, exploring all sorts of parsers, interpreters and compilers. From time to time you can hear my low-quality jokes about architecture at conferences in Poland. I am also author of a blog on http://geekyprimitives.com/, one of the founders of SegFault conferences brand and full time performance engineer at Neo4j.
+"""
+photo = "jaroslaw_palka.png"
