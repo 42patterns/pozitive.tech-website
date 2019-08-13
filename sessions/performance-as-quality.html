@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>        
+                
+        <meta charset="utf-8">
+<meta name="viewport"
+    content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title> Performance as quality  | pozitive technologies 2019 | Poznań</title>
+
+<meta name="author" content="pozitive technologies">
+<meta name="description" content=" Performance as quality | pozitive technologies 2019 | Poznań">
+<meta name="keywords" content="Software architecture, artificial intelligence, machine learning, software engineering">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@poztivietech">
+<meta name="twitter:title" content=" Performance as quality  | pozitive technologies 2019 | Poznań">
+<meta name="twitter:image" content="https://pozitive.tech/images/social/opengraph-twitter.png">
+<meta name="twitter:description" content="Times change. IT systems have brutally invaded our lives, and software eats humanity for breakfast. In the meantime we carry 8 cores and 8 GB RAM in our pockets. The AMD presented a 12-core processor on the so-called consumer market, and Gmail is still stuck and sluggish when it is scrolled through emails. To edit a text file, we need 2 GB of RAM, and an application, which performs the same functions as IRC in the 90s, devours any amount of CPU and memory. And nobody cares. Hardware is cheaper than programmer&#39;s time... right?  Since such words, like cloud or serverless, have dominated any architectural discussion, the lie repeated for years has become truth.
+
+During the presentation, I would like to share with you the answer to the question posed in the title of the presentation: is efficiency quality? How to ensure the performance of your systems? Who is responsible for all this? (will we sadly discover at the end that the HR department?)?
+
+How does all this relate to Krakow&#39;s smog?
+
+How to start with performance testing, what techniques, tools and skills do we need to possess? And why &#34;performance man&#34; is the best profession in the world?">
+
+
+<meta property="og:title"  content=" Performance as quality  | pozitive.tech 2019 | Poznań">
+<meta property="og:site_name" content="pozitive.tech 2019 | Poznań">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Times change. IT systems have brutally invaded our lives, and software eats humanity for breakfast. In the meantime we carry 8 cores and 8 GB RAM in our pockets. The AMD presented a 12-core processor on the so-called consumer market, and Gmail is still stuck and sluggish when it is scrolled through emails. To edit a text file, we need 2 GB of RAM, and an application, which performs the same functions as IRC in the 90s, devours any amount of CPU and memory. And nobody cares. Hardware is cheaper than programmer&#39;s time... right?  Since such words, like cloud or serverless, have dominated any architectural discussion, the lie repeated for years has become truth.
+
+During the presentation, I would like to share with you the answer to the question posed in the title of the presentation: is efficiency quality? How to ensure the performance of your systems? Who is responsible for all this? (will we sadly discover at the end that the HR department?)?
+
+How does all this relate to Krakow&#39;s smog?
+
+How to start with performance testing, what techniques, tools and skills do we need to possess? And why &#34;performance man&#34; is the best profession in the world?">
+<meta property="og:image" content="https://pozitive.tech/images/social/opengraph-pozitive-technologies.png">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="/vendor/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://pozitive.tech/sass/main.css">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143166840-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-143166840-1');
+</script>
+
+
+
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2275570459373322');
+    fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=2275570459373322&ev=PageView
+&noscript=1" />
+</noscript>
+
+
+    </head>
+
+    <body>
+        <div id="st-container" class="st-container disable-scrolling">
+            <div class="st-pusher">
+                <div class="st-content">
+
+                <!-- Begin Top Section -->
+                <section id="top-section" class="top-section image-section enable-overlay" 
+                    style="background-image: url('/images/sections-background/duotone-agenda.jpg');">
+                    <div class="overlay white-overlay"></div>
+                    <header id="top-header" class="top-header">
+    <div class="overlay white-solid"></div>
+    <div id="menu-trigger" class="menu-trigger icon icon-menu">
+        &#8801;
+    </div>
+    <a href="/" id="logo-header" class="logo-header">
+        <div class="logo d-none"></div>
+    </a>
+    <nav class="st-menu st-effect" id="menu">
+        <a href="/"><div class="logo-navbar logo logo-dark"></div></a>
+        <ul>
+            <li>
+                <a class="" href="/speakers">speakers</a>
+            </li>
+            <li>
+                <a class="" href="/agenda">agenda</a>
+            </li>
+            <li>
+                <a class="" href="/#location">location</a>
+            </li>
+            <li>
+                <a class="" href="/#partners">partners</a>
+            </li>
+            <li>
+                <a class="" href="/city">city of Poznań</a>
+            </li>
+            <li>
+                <button type="button" id="register-btn" class="btn btn-light"
+                    data-toggle="modal" data-target="#registrationModal">
+                    Get tickets!
+                </button>
+                
+            </li>
+        </ul>
+    </nav>
+</header>
+
+                    <div class="container">
+                        <div class="jumbotron text-center">
+                            <!-- animated hiding -->
+                            <div class="" data-animation="fadeInLeft" data-delay="500">
+                                <h1>
+                                
+                                    <span>Jarosław Pałka</span>
+                                
+                                </h1>
+                            </div>
+                        </div>
+                    </div>                    
+                </section>
+                <!-- End Top Section -->
+
+                <section id="session" class="session__section py-3">
+                    <div class="container session">
+                        <div class="description">
+                            
+                            <div class="name">
+                                <h3 class="title">
+                                    Performance as quality
+                                    <span>
+    
+    
+        &#x1f1ec;&#x1f1e7;
+    
+</span>
+
+                                </h3>
+                            </div>       
+                            <div class="tags">
+                            
+                                <span>#architecture</span>
+                            
+                                <span>#performance</span>
+                            
+                                <span>#quality-assurance</span>
+                            
+                                <span>#keynote</span>
+                            
+                            </div>        
+                            <div class="abstract">
+                                Times change. IT systems have brutally invaded our lives, and software eats humanity for breakfast. In the meantime we carry 8 cores and 8 GB RAM in our pockets. The AMD presented a 12-core processor on the so-called consumer market, and Gmail is still stuck and sluggish when it is scrolled through emails. To edit a text file, we need 2 GB of RAM, and an application, which performs the same functions as IRC in the 90s, devours any amount of CPU and memory. And nobody cares. Hardware is cheaper than programmer's time... right?  Since such words, like cloud or serverless, have dominated any architectural discussion, the lie repeated for years has become truth.<br /><br />During the presentation, I would like to share with you the answer to the question posed in the title of the presentation: is efficiency quality? How to ensure the performance of your systems? Who is responsible for all this? (will we sadly discover at the end that the HR department?)?<br /><br />How does all this relate to Krakow's smog?<br /><br />How to start with performance testing, what techniques, tools and skills do we need to possess? And why "performance man" is the best profession in the world?
+                            </div>
+                                                     
+                        </div>
+                    </div>
+                    <div class="container speakers py-3">
+                        
+                        <div class="speaker d-flex flex-column flex-md-row">
+                            <div class="photo text-center">
+                                <img src="/speakers/images/jaroslaw_palka.png">
+                            </div>
+                            <div class="name px-3">
+                                <h4>Jarosław Pałka</h4>
+                                <div class="role">
+                                    Performance Engineer at Neo4j
+                                </div>
+                                <div class="bio">
+                                    <span>
+                                        For more than 20 years in the IT industry, as a database administrator, programmer, architect, manager and "onsite disaster engineer".<br /><br />I took part in small, medium and large projects nonsense, under the principles of "Waterfall", Agile and in the absence of any methodologies, always with the same effect. What led me to the conclusion that no matter what you do, as long how you do it well, in the simplest possible way and use appropriate tools that do the work for you. In the meantime, I fell in love in the ideas of TDD and Software Craftsmanship, to the limits exploring beautiful in its simplicity ideas as REST and NoSQL, only to abandon them to explore the secrets of "systems thinking" and admire the strength that brings "metaphor" and discover that we are all objects in an eternal virtual machine.<br /><br />Humble follower of the church of JVM, bytecode and JIT researcher, exploring all sorts of parsers, interpreters and compilers. From time to time you can hear my low-quality jokes about architecture at conferences in Poland. I am also author of a blog on http://geekyprimitives.com/, one of the founders of SegFault conferences brand and full time performance engineer at Neo4j.<br />
+                                    </span>            
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                
+                <section id="footer" class="footer__section">
+    <div class="addresses container">
+        <div class="row">
+            <div class="pb-3 pb-md-0 col-12 col-md-4">
+                <h5>Contact</h5>
+                <div>
+                    <div class="p-0 col-6">
+                        <strong>Justyna Bień</strong><br>
+                        conference manager<br>
+                        <a href="mailto:justyna@segfault.events">justyna@segfault.events</a><br>
+                        +48 533 600 164
+                    </div>
+                    <div class="col-6">
+                    </div>
+                </div>
+            </div>
+            <div class="pb-3 pb-md-0 col-12 col-md-6">
+                <h5>Production</h5>
+                <div>
+                    <strong>Symentis Events sp z o.o.</strong><br>
+                    Rynek Główny 28<br>
+                    31-010 Kraków
+                </div>
+            </div>
+            <div class="social col-12 col-md-2 d-flex flex-row justify-content-center justify-content-md-end align-items-end">
+                <a href="https://facebook.com/pozitivetech" target="_blank"><img src="/images/icons/facebook.svg"></a>
+                <a href="https://twitter.com/pozitivetech" target="_blank"><img src="/images/icons/twitter.svg"></a>
+                <a href="https://www.instagram.com/pozitivetechnologies/" target="_blank"><img src="/images/icons/instagram.svg"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr>
+                <span>&copy;2019. Symentis Events sp z o.o.</span>
+                <span class="d-none d-md-inline">All rights reserved</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registrationModalLabel">pozitive.tech registration</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <iframe src="https://pozitive-tech-poznan-2019.konfeo.com/en/groups?iframe=1" frameborder="0" width="100%" scrolling="auto" style="min-height: 500px"></iframe>
+            <script type="text/javascript" src="https://pozitive-tech-poznan-2019.konfeo.com/iframeResizer.min.js"></script>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="/vendor/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="/vendor/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="/vendor/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+<script>
+$(document).ready(function () {
+    if ($(window).scrollTop() >= 100) {
+        $('#top-header').addClass('after-scroll');
+        $('#logo-header .logo').removeClass('logo-light').addClass('logo-dark');
+    }
+
+    $(window).scroll(function () {
+        var scroll = $(this).scrollTop();
+        var header = $('#top-header');
+        var logo = $('#logo-header .logo');
+        var buyButton = $('#register-btn');
+        var topOffset = header.height() + $('.track-header').height();
+
+        if (scroll >= 100) {
+            header.addClass('after-scroll');
+            logo.removeClass('d-none').addClass('logo-dark');
+            buyButton.removeClass('btn-light').addClass('btn-dark');
+        } else {
+            header.removeClass('after-scroll');
+            logo.removeClass('logo-dark').addClass('d-none');
+            buyButton.removeClass('btn-dark').addClass('btn-light');
+        }
+
+        if (scroll >= $('.top-section').height() && $(window).width() > 767) {
+            buyButton.removeClass('right-nav-button-hidden');
+        } else if (scroll < $('.top-section').height() && $(window).width() > 767) {
+            buyButton.addClass('right-nav-button-hidden');
+        }
+    });
+
+    $(window).resize(function () {
+        if ($(window).height() < 512) {
+            $('.st-menu').addClass('scrollable');
+        } else {
+            $('.st-menu').removeClass('scrollable');
+        }
+    });
+
+    
+    var container = $('.st-container');
+    $('#menu-trigger').click(function (event) {
+        event.stopPropagation();
+        container.toggleClass('st-menu-open');
+    });
+    $('.st-pusher').click(function () {
+        if (container.hasClass('st-menu-open')) {
+            container.removeClass('st-menu-open');
+        }
+    });
+
+    $("#arrow-down").click(function (e) {
+        $("body").animate({
+            scrollTop: $("#speakers").offset().top
+        }, "slow");
+    });
+});
+</script>
+
+    </body>
+
+</html>
