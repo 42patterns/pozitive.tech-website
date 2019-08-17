@@ -2,7 +2,7 @@ title = "GraalVM - JVM over JVMs?"
 language = "pl"
 abstract = "Recently we have witnessed a small expansion of virtual machines in the Java ecosystem. Is GraalVM shining above others in the current situation? Or is it another OpenJDK fork? As part of this presentation we will answer questions what is GraalVM, what are the problems it solves and what makes GraalVM so special."
 track = ""
-tags = ["programing languages", "jvm"]
+tags = ["performance", "graalvm", "programing languages", "jvm"]
 
 # [opengraph]
 # fb = "krzysztof_krawiec-og.png"
