@@ -1,0 +1,18 @@
+title = "Serverless under thatched roof: introduction to Fn Project"
+language = "pl"
+abstract = """In my presentation I'd like to talk about a topic being "the hottest buzzword" in 2016, that means Serverless Architecture. I'm going to say a few words about existing Serverless solutions, but I'm going to focus mainly on one of them, (not very similar to the others) which is Fn Project. During my presentation I'll try to introduce you to this platform, show you how to start working with it and what actually can we achieve with it. I'll mention also some more advanced aspects related to Fn Project"""
+track = ""
+tags = ["serverless", "cloud"]
+
+# [opengraph]
+# fb = "krzysztof_krawiec-og.png"
+# twitter = "krzysztof_krawiec-og-sq.png"
+
+[[speakers]]
+name = "Szymon Winiarz"
+role = "Software Engineer"
+company = "Sonalake"
+bio = """Software developer by education, profession and passion. I have been working in the industry for about 7 years. My main field of experience is Java, but I also don't shun from other JVM languages, such as Scala or Kotlin. In the work of a programmer the thing that I value the most is the opportunity to exchange experience between teammates, thanks to which each of them, regardless of his or her current level, can always learn something new and useful.
+
+Privately husband, father of two kids and fan of a good fantasy literature and computer games. An introvert constantly testing the boundaries of his beloved comfort zone."""
+photo = "szymon_winiarz.jpg"

@@ -14,7 +14,7 @@ agenda:
         - "9:45 - 10:00":
             - Coffee break
         - "10:00 - 10:30":
-            - TBA
+            - szymon_winiarz-serverless
             - jarek_ratajski-another_year_another_language
         - "10:30 - 11:00":
             - marek_puchalski-app_survival_kit
@@ -22,10 +22,10 @@ agenda:
         - "11:00 - 11:15":
             - Coffee break
         - "11:15 - 11:45":
-            - jakub_wadolowski-taming_content_delivery
+            - wojtek_lesicki-pawel_czubachowski-content_security_policy            
             - michal_jawulski-reactive
         - "11:45 - 12:15":
-            - wojtek_lesicki-pawel_czubachowski-content_security_policy
+            - jakub_wadolowski-taming_content_delivery
             - jedrzej_serwa-grall_vm
         - "12:15 - 13:00":
             - Lunch break
