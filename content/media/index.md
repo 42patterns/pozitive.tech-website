@@ -1,6 +1,6 @@
 ---
 title: media
-heroImage: duotone-speakers.jpg
+heroImage: duotone-default.png
 ---
 
 Zasady współpracy medialnej:

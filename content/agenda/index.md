@@ -1,6 +1,6 @@
 ---
 title: agenda
-heroImage: duotone-speakers.jpg
+heroImage: duotone-agenda.jpg
 type: agenda
 agenda:
     - tracks: 
