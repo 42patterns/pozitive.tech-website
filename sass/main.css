@@ -404,6 +404,9 @@ nav li {
   padding: 3rem;
   background-color: #002b38; }
 
+.footer__section .link-list ul {
+  list-style-type: none; }
+
 .footer__section .addresses {
   font-size: 0.6em; }
   .footer__section .addresses h5 {
