@@ -24,7 +24,7 @@
             </div>          
             <div class="link-list pb-3 pb-md-0 col-12 col-md-3">
                 <ul>
-                {{ range .Pages.ByWeight }}
+                {{ range .Site.Pages.ByWeight }}
                     <li><a href="{{ .RelPermalink }}">{{ .Title | title }}</a></li>
                 {{ end }}
                 </ul>
