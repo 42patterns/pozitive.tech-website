@@ -1,6 +1,7 @@
 ---
 title: City of Poznań
 heroImage: duotone-poznan.jpg
+weight: 5
 ---
 
 ![Photo of Poznań](/city/images/poznan_1.jpg#city-images)

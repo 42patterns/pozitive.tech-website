@@ -7,6 +7,12 @@
         background-color: $color-secondary;        
     }
 
+    .link-list {
+        ul {
+            list-style-type: none;
+        }
+    }
+
     .addresses {
         font-size: 0.6em;
 

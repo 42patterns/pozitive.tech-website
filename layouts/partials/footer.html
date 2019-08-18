@@ -1,7 +1,7 @@
 <section id="footer" class="footer__section">
     <div class="addresses container">
         <div class="row">
-            <div class="pb-3 pb-md-0 col-12 col-md-4">
+            <div class="pb-3 pb-md-0 col-12 col-md-3">
                 <h5>Contact</h5>
                 <div>
                     <div class="p-0 col-6">
@@ -14,15 +14,22 @@
                     </div>
                 </div>
             </div>
-            <div class="pb-3 pb-md-0 col-12 col-md-6">
+            <div class="pb-3 pb-md-0 col-12 col-md-3">
                 <h5>Production</h5>
                 <div>
                     <strong>Symentis Events sp z o.o.</strong><br>
                     Rynek Główny 28<br>
                     31-010 Kraków
                 </div>
+            </div>          
+            <div class="link-list pb-3 pb-md-0 col-12 col-md-3">
+                <ul>
+                {{ range .Pages.ByWeight }}
+                    <li><a href="{{ .RelPermalink }}">{{ .Title | title }}</a></li>
+                {{ end }}
+                </ul>
             </div>
-            <div class="social col-12 col-md-2 d-flex flex-row justify-content-center justify-content-md-end align-items-end">
+            <div class="social col-12 col-md-3 d-flex flex-row justify-content-center justify-content-md-end align-items-end">
                 <a href="https://facebook.com/pozitivetech" target="_blank"><img src="/images/icons/facebook.svg"></a>
                 <a href="https://twitter.com/pozitivetech" target="_blank"><img src="/images/icons/twitter.svg"></a>
                 <a href="https://www.instagram.com/pozitivetechnologies/" target="_blank"><img src="/images/icons/instagram.svg"></a>

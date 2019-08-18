@@ -1,7 +1,10 @@
 ---
 title: media
 heroImage: duotone-default.png
+weight: 99
 ---
+
+Przedstawicieli mediów zalinteresowanych partnerstwem medialnym lub akredytacją dziennikarską zapraszamy [do kontaktu](mailto:media@segfault.events) oraz do zapoznania się z zamieszczonymi materiałami.
 
 Zasady współpracy medialnej:
 

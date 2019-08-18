@@ -2,6 +2,7 @@
 title: agenda
 heroImage: duotone-agenda.jpg
 type: agenda
+weight: 1
 agenda:
     - tracks: 
         - "Track 1"
