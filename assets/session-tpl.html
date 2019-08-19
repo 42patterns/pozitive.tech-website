@@ -21,20 +21,22 @@
                         <div class="jumbotron text-center">
                             <!-- animated hiding -->
                             <div class="" data-animation="fadeInLeft" data-delay="500">
-                                <h1>
-                                {{ range .session.speakers }}
-                                    <span>{{ .name }}</span>
-                                {{ end }}
-                                </h1>
+                                {{ partial "conference-date.html" . }}
                             </div>
                         </div>
                     </div>                    
                 </section>
                 <!-- End Top Section -->
 
-                <section id="session" class="session__section py-3">
+                <section id="session" class="session__section">
                     <div class="container session">
                         <div class="description">
+                            <h1>
+                            {{ range .session.speakers }}
+                                <span>{{ .name }}</span>
+                            {{ end }}
+                            </h1>
+        
                             {{ if .session.title }}
                             <div class="name">
                                 <h3 class="title">

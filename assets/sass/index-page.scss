@@ -30,26 +30,13 @@
             }
         }        
     }
-
-    .date {
-        color: white;
-        font-weight: $font-bold;
-        font-size: 3.75em;
-
-        @media (max-width : 767px) { 
-            font-size: 2.75em;
-        }
-    }
- 
-    .city {
-        font-weight: $font-extra-bold;
-        font-size: 6em;
-
-        @media (max-width : 767px) { 
-            font-size: 4em;
-        }
-    }
     
+    .hero-text {   
+        .city {
+            color: $color-secondary;
+        }
+    }
+
     .hashtag {
         font-weight: $font-extra-bold;
         font-size: 1.5em;
@@ -67,7 +54,6 @@
                 animation: callToAction 3.5s linear 0s infinite;
 
                 @media (max-width : 767px) { 
-                    margin-left: -40px;
                     bottom: 50px;
                 }
             }
@@ -117,6 +103,10 @@
         @extend %base-section;        
         color: $color-secondary;
     }    
+
+    h3 {        
+        color: $color-secondary;
+    }
 
     .btn {
         color: white;
@@ -183,6 +173,10 @@
         @media (min-width : 767px) { 
             min-height: 80%;
         }        
+    }
+
+    h3 {        
+        color: white;
     }
 
     .address {

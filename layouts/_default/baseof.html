@@ -21,7 +21,7 @@
                         <div class="jumbotron text-center">
                             <!-- animated hiding -->
                             <div class="" data-animation="fadeInLeft" data-delay="500">
-                                <h1>{{ .Title  }}</h1>
+                                {{ partial "conference-date.html" . }}
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                 {{ block "main" . }}
                     {{ .Content }}
                 {{ end }}
-                
+                        
                 {{ partial "footer.html" . }}
                 </div>
             </div>

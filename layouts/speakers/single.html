@@ -2,7 +2,9 @@
 
 {{ $baseUrl := .Site.BaseURL }}
 <section id="speakers" class="speakers__section">
-    <div class="container text-center py-5">
+    <div class="container text-center">
+        <h1>{{ .Title }}</h1>
+
         {{ $Site := .Site}}
         {{ range sort .Site.Data.sessions "track" "desc"}}
 

@@ -37,7 +37,17 @@ section {
     color: $color-content;
 
     h1, h2, h3, h4, h5 {
-        text-transform: capitalize;
+        color: $color-main;        
+    }
+
+    h1 {
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        text-decoration: underline;
+
+        @media (min-width: 767px) {
+            padding-top: 1em;
+        }
     }
 
     img[src*="city-images"] {
@@ -60,5 +70,30 @@ section {
     h1, h2, h3, h4, h5 {
         font-size: 1em;
         color: $color-main;
+    }
+}
+
+.hero-text {
+
+    .date {
+        color: white;
+        font-weight: $font-bold;
+        font-size: 5vw;
+
+        @media (max-width : 767px) { 
+            font-size: 6vw;
+        }
+    }
+ 
+    .city {
+        font-weight: $font-extra-bold;
+        font-size: 6em;
+        color: $color-main;
+        margin-top: -0.4em;
+
+        @media (max-width : 767px) { 
+            margin-top: 0;    
+            font-size: 4em;
+        }
     }
 }
