@@ -90,6 +90,7 @@ section {
         font-size: 6em;
         color: $color-main;
         margin-top: -0.4em;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
         @media (max-width : 767px) { 
             margin-top: 0;    
