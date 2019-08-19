@@ -59,7 +59,7 @@
                             {{ end }}
                             </div>
                             <div class="pt-3 col-md-4 offset-md-4">
-                                [ <a href="/speakers">see all speakers</a> ]
+                                [<a href="/speakers">see all speakers</a>]
                             </div>
                         </div>
                     </section>
@@ -70,8 +70,9 @@
 
                             <div id="ideas" class="ideas p-3 col-md-8 offset-md-2 d-none d-md-block">
                                 <div class="p-1 col-6 text-left">
-                                    <span>Come & Join pozitive.technologies</span>
-                                    <hr>
+                                    <div class="claim">
+                                        <span>Come & Join pozitive.technologies</span>
+                                    </div>
                                     <ul>
                                         <li>Single day / Two tracks</li>
                                         <li>
@@ -188,30 +189,30 @@
                                         </div>
                                     </div> 
                                 </div>
-                                <div class="media">
-                                {{ with .Site.GetPage "page" "partners" }}
-                                    <div class="community">                                        
-                                        <h4>Communities</h4>
-                                        <div class="d-flex flex-wrap align-items-center justify-content-center">
-                                        {{ range .Resources.Match "community/*" }}
-                                            {{ if .Params.url }}
-                                                <a href="{{ .Params.url }}" target="_blank"><img src="{{ .RelPermalink }}"></a>
-                                            {{ else }}
-                                                <img src="{{ .RelPermalink }}">                                
-                                            {{ end }}                                            
-                                        {{ end }}
-                                        </div>
-                                    </div>
-                                    {{/*  <div class="conferences">                                        
-                                        <h4>Conferences</h4>
-                                        <div class="d-flex flex-wrap align-items-center justify-content-center">
-                                        {{ range .Resources.Match "conferences/*" }}
+                            </div>
+                            <div class="media">
+                            {{ with .Site.GetPage "page" "partners" }}
+                                <div class="community">                                        
+                                    <h4>Communities</h4>
+                                    <div class="d-flex flex-wrap align-items-center justify-content-center">
+                                    {{ range .Resources.Match "community/*" }}
+                                        {{ if .Params.url }}
+                                            <a href="{{ .Params.url }}" target="_blank"><img src="{{ .RelPermalink }}"></a>
+                                        {{ else }}
                                             <img src="{{ .RelPermalink }}">                                
-                                        {{ end }}
-                                        </div>
-                                    </div>                                      */}}
-                                {{ end }}
+                                        {{ end }}                                            
+                                    {{ end }}
+                                    </div>
                                 </div>
+                                {{/*  <div class="conferences">                                        
+                                    <h4>Conferences</h4>
+                                    <div class="d-flex flex-wrap align-items-center justify-content-center">
+                                    {{ range .Resources.Match "conferences/*" }}
+                                        <img src="{{ .RelPermalink }}">                                
+                                    {{ end }}
+                                    </div>
+                                </div>                                      */}}
+                            {{ end }}
                             </div>
                         </div>
                     </section>

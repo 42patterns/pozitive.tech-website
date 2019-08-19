@@ -32,15 +32,16 @@
     }
     
     .hero-text {   
+        padding-top: 5em;
+
         .city {
             text-shadow: none;
-            color: $color-secondary;
         }
     }
 
     .hashtag {
         font-weight: $font-extra-bold;
-        font-size: 1.5em;
+        font-size: 1.2em;
 
         .arrow-down {
             img {
@@ -67,6 +68,8 @@
 }
 
 .speakers__index_section {
+    color: white;
+
     & {
         @extend %base-section;
         background-color: $color-secondary;
@@ -122,9 +125,11 @@
         background-color: $color-secondary; 
         z-index: -1;
 
-        hr {
-            background-color: white;
-            margin-top: 0.2rem !important;
+        .claim {
+            span {
+                border-bottom: 1px solid white;
+            }
+            margin-bottom: 0.4rem;
         }
 
         @media (min-width : 767px) { 
@@ -217,8 +222,8 @@
 
     img {    
         margin: 0.6rem 2rem;
-        max-height: 100px;
-        max-width: 200px;            
+        max-height: 80px;
+        max-width: 150px;            
         -webkit-filter: grayscale(1); /* Safari 6.0 - 9.0 */
         filter: grayscale(1);
     }
