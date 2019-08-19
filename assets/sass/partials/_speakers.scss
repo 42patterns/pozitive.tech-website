@@ -25,7 +25,7 @@
             .name {
                 margin-top: 0 !important;
     
-                h3.title {
+                h2.title {
                     border-left: 3px solid $color-secondary;
                     padding-left: 0.6em;
                 }    
@@ -48,7 +48,8 @@
                 padding-right: 1em;    
             }
             
-            h4 {
+            h3 {
+                text-transform: capitalize;
                 color: $color-secondary;
             }
 
