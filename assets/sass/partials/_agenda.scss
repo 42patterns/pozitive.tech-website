@@ -1,5 +1,7 @@
 .agenda__section {
    
+    color: $color-secondary;
+
     h3 {
       padding: 0.4em;
     }
@@ -33,13 +35,19 @@
         border-bottom: 1px dashed #e8eff7;
       }
 
-      .agenda-element {
+      .agenda-element {        
           text-align: left;
           
+          .title {
+            color: $color-main;
+          }
+
           .tags {
+              color: $color-content;
               font-size: x-small;
           }
           .abstract {
+              color: $color-content;
               font-size: small;
           }
       }

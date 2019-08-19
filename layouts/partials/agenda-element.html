@@ -24,8 +24,7 @@
     </div>
     {{ end }}
 {{ else }}
-    {{ .agendaTitle }}
-    <br />
+    <div class="title">{{ .agendaTitle }}</div>
     {{ range $speaker := .speakers }}
         <a  href="{{ $speaker.Permalink }}"><strong>{{ $speaker.Params.speakername }}</strong></a>
     {{ end }}
