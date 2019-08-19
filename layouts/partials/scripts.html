@@ -10,25 +10,35 @@ integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07j
 crossorigin="anonymous"></script>
 <script>
 $(document).ready(function () {
+    var hideLogo = $('#logo-header .logo').hasClass('d-none');
     if ($(window).scrollTop() >= 100) {
         $('#top-header').addClass('after-scroll');
-        $('#logo-header .logo').removeClass('logo-light').addClass('logo-dark');
+        if (hideLogo) {
+            $('#logo-header .logo').removeClass('d-none');
+        }        
+        $('#logo-header .logo').removeClass('logo-dark').addClass('logo-gray');
     }
 
     $(window).scroll(function () {
         var scroll = $(this).scrollTop();
         var header = $('#top-header');
-        var logo = $('#logo-header .logo');
+        var logo = $('#logo-header .logo');        
         var buyButton = $('#register-btn');
         var topOffset = header.height() + $('.track-header').height();
 
         if (scroll >= 100) {
             header.addClass('after-scroll');
-            logo.removeClass('d-none').addClass('logo-dark');
+            if (hideLogo) {
+                logo.removeClass('d-none');
+            }
+            logo.removeClass('logo-dark').addClass('logo-gray');            
             buyButton.removeClass('btn-light').addClass('btn-dark');
         } else {
             header.removeClass('after-scroll');
-            logo.removeClass('logo-dark').addClass('d-none');
+            if (hideLogo) {
+                logo.addClass('d-none');
+            }
+            logo.removeClass('logo-gray').addClass('logo-dark');
             buyButton.removeClass('btn-dark').addClass('btn-light');
         }
 

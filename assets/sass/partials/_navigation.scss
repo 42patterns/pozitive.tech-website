@@ -25,17 +25,17 @@ $max-width: $min-width - 1;
         }
     }
 
-    .logo {
-        background-image: url('/images/logo-white-bg.svg');
+    .logo {        
         background-repeat: no-repeat;
+
         &.logo-dark {
-            // background-position: 0 -1px;
+            background-image: url('/images/logo-dark-blue-bg.svg');
         }
         &.logo-gray {
-            // background-position: 0 -63px;
+            background-image: url('/images/logo-white-bg.svg');
         }
         &.logo-light {
-            // background-position: 0 -127px;
+            background-image: url('/images/logo-light-blue-bg.svg');
         }
     }
 
@@ -79,7 +79,8 @@ $max-width: $min-width - 1;
         margin-right: 20px;
         transform: scale(.7);
         vertical-align: middle;
-         @media (max-width: $max-width) {
+        @media (max-width: $max-width) {
+            margin-left: -20px;
             transform: scale(.6);
         }
     }
@@ -87,7 +88,7 @@ $max-width: $min-width - 1;
 .logo-navbar {
     width: 285px;
     height: 80px;
-    margin: 8px 20px 0 -10px;
+    margin-left: -30px;
     transform: scale(.6);
     vertical-align: middle;
 

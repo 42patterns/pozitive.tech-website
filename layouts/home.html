@@ -12,7 +12,7 @@
                 <div class="st-content">
 
                     <section id="hero" class="hero__index_section">
-                        {{ partial "navigation.html" . }}
+                        {{ partial "navigation.html" (dict "hideLogo" true) }}
 
                         <div class="hero-content h-100 d-flex flex-column">
                             <div class="logo">

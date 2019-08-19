@@ -3,11 +3,11 @@
     <div id="menu-trigger" class="menu-trigger icon icon-menu">
         &#8801;
     </div>
-    <a href="/" id="logo-header" class="logo-header">
-        <div class="logo d-none"></div>
+    <a href="/" id="logo-header" class="logo-header">    
+        <div class="logo logo-dark {{ if isset . "hideLogo" }}d-none{{ end }}"></div>
     </a>
     <nav class="st-menu st-effect" id="menu">
-        <a href="/"><div class="logo-navbar logo logo-dark"></div></a>
+        <a href="/"><div class="logo-navbar logo logo-gray"></div></a>
         <ul>
             <li>
                 <a class="" href="/speakers">speakers</a>
