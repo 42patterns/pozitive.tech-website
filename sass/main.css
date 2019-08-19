@@ -22,6 +22,9 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
   text-transform: lowercase; }
 
+.btn {
+  border-radius: 0; }
+
 img {
   border: 0;
   margin: 0;
@@ -30,7 +33,14 @@ img {
 section {
   color: #616161; }
   section h1, section h2, section h3, section h4, section h5 {
-    text-transform: capitalize; }
+    color: #1bacb1; }
+  section h1 {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    text-decoration: underline; }
+    @media (min-width: 767px) {
+      section h1 {
+        padding-top: 1em; } }
   section img[src*="city-images"] {
     border: 1px solid #002b38;
     border-radius: 4px;
@@ -46,6 +56,24 @@ section {
 #registrationModal h1, #registrationModal h2, #registrationModal h3, #registrationModal h4, #registrationModal h5 {
   font-size: 1em;
   color: #1bacb1; }
+
+.hero-text .date {
+  color: white;
+  font-weight: 500;
+  font-size: 4vw; }
+  @media (max-width: 767px) {
+    .hero-text .date {
+      font-size: 6vw; } }
+
+.hero-text .city {
+  font-weight: 700;
+  font-size: 10vw;
+  color: #002b38;
+  margin-top: -0.4em;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; }
+  @media (max-width: 767px) {
+    .hero-text .city {
+      margin-top: 0; } }
 
 .content-wrapper {
   position: relative;
@@ -179,8 +207,13 @@ section {
     .top-header.after-scroll .overlay {
       opacity: 1; }
   .top-header .logo {
-    background-image: url("/images/logo-white-bg.svg");
     background-repeat: no-repeat; }
+    .top-header .logo.logo-dark {
+      background-image: url("/images/logo-dark-blue-bg.svg"); }
+    .top-header .logo.logo-gray {
+      background-image: url("/images/logo-white-bg.svg"); }
+    .top-header .logo.logo-light {
+      background-image: url("/images/logo-light-blue-bg.svg"); }
   .top-header .overlay {
     opacity: 0;
     transition: all 0.3s; }
@@ -218,12 +251,13 @@ section {
     vertical-align: middle; }
     @media (max-width: 1023px) {
       .logo-header .logo {
+        margin-left: -20px;
         transform: scale(0.6); } }
 
 .logo-navbar {
   width: 285px;
   height: 80px;
-  margin: 8px 20px 0 -10px;
+  margin-left: -30px;
   transform: scale(0.6);
   vertical-align: middle; }
   @media (min-width: 1024px) {
@@ -292,6 +326,7 @@ nav li {
     font-size: 1rem;
     font-weight: 700;
     transition: all 0.3s;
+    text-decoration: none;
     text-transform: lowercase;
     color: white; }
     @media (max-width: 1023px) {
@@ -304,7 +339,7 @@ nav li {
         color: black !important;
         outline: 0; } }
     nav li a.current, nav li a:hover {
-      text-decoration: none;
+      text-decoration: underline;
       color: #cfcfcf; }
       @media (max-width: 1023px) {
         nav li a.current, nav li a:hover {
@@ -401,27 +436,24 @@ nav li {
     transform: translateY(-16px); } }
 
 .footer__section {
-  padding: 3rem;
-  background-color: #002b38; }
-
-.footer__section .link-list ul {
-  list-style-type: none; }
-
-.footer__section .addresses {
-  font-size: 0.6em; }
+  color: white;
+  font-size: 0.7em; }
+  .footer__section {
+    padding: 3rem;
+    background-color: #002b38; }
+  .footer__section .link-list ul {
+    list-style-type: none;
+    padding: 0; }
   .footer__section .addresses h5 {
     color: #1bacb1; }
   .footer__section .addresses strong {
     color: #1bacb1; }
-
-.footer__section hr {
-  background-color: white;
-  margin-bottom: 0 !important; }
-
-.footer__section .social img {
-  filter: brightness(100);
-  width: 3rem;
-  height: 3rem; }
+  .footer__section hr {
+    background-color: white; }
+  .footer__section .social img {
+    filter: brightness(100);
+    width: 2rem;
+    height: 2rem; }
 
 .top-section {
   position: relative;
@@ -444,12 +476,12 @@ nav li {
       color: #002b38; }
 
 .jumbotron {
-  padding: 300px 0 0 0;
+  padding: 150px 0 0 0;
   color: #fff;
   background: 0; }
   @media (max-width: 767px) {
     .jumbotron {
-      padding-top: 130px;
+      padding-top: 90px;
       padding-left: 15px;
       padding-bottom: 5px; } }
   @media screen and (min-width: 768px) {
@@ -471,7 +503,7 @@ nav li {
       font-size: 0.8em; }
     .session__section .session .description .name {
       margin-top: 0 !important; }
-      .session__section .session .description .name h3.title {
+      .session__section .session .description .name h2.title {
         border-left: 3px solid #002b38;
         padding-left: 0.6em; }
     .session__section .session .description .abstract {
@@ -484,7 +516,8 @@ nav li {
       .session__section .speakers .speaker {
         padding-left: 1.5em;
         padding-right: 1em; } }
-    .session__section .speakers .speaker h4 {
+    .session__section .speakers .speaker h3 {
+      text-transform: capitalize;
       color: #002b38; }
     .session__section .speakers .speaker .photo {
       margin-bottom: 1em; }
@@ -533,34 +566,38 @@ nav li {
     .speakers__section .speaker .tags span {
       font-size: 0.8em; }
 
-.agenda__section h3 {
-  padding: 0.4em; }
-
-.agenda__section .header {
-  background-color: #fafafa;
-  border-top: 1px solid #dee2e6;
-  border-bottom: 2px solid #dee2e6; }
-
-.agenda__section .row {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #e8eff7; }
-  .agenda__section .row:hover:not(.header) {
-    background: #f5f5f5; }
-  .agenda__section .row:last-child {
-    margin-bottom: 30px;
-    border-bottom: 3px solid #dee2e6; }
-  .agenda__section .row .mobile-hour {
-    padding-bottom: 10px;
-    border-bottom: 1px dashed #e8eff7; }
-  .agenda__section .row .mobile-track:not(:last-child) {
-    border-bottom: 1px dashed #e8eff7; }
-  .agenda__section .row .agenda-element {
-    text-align: left; }
-    .agenda__section .row .agenda-element .tags {
-      font-size: x-small; }
-    .agenda__section .row .agenda-element .abstract {
-      font-size: small; }
+.agenda__section {
+  color: #002b38; }
+  .agenda__section h3 {
+    padding: 0.4em; }
+  .agenda__section .header {
+    background-color: #fafafa;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6; }
+  .agenda__section .row {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #e8eff7; }
+    .agenda__section .row:hover:not(.header) {
+      background: #f5f5f5; }
+    .agenda__section .row:last-child {
+      margin-bottom: 30px;
+      border-bottom: 3px solid #dee2e6; }
+    .agenda__section .row .mobile-hour {
+      padding-bottom: 10px;
+      border-bottom: 1px dashed #e8eff7; }
+    .agenda__section .row .mobile-track:not(:last-child) {
+      border-bottom: 1px dashed #e8eff7; }
+    .agenda__section .row .agenda-element {
+      text-align: left; }
+      .agenda__section .row .agenda-element .title {
+        color: #1bacb1; }
+      .agenda__section .row .agenda-element .tags {
+        color: #616161;
+        font-size: x-small; }
+      .agenda__section .row .agenda-element .abstract {
+        color: #616161;
+        font-size: small; }
 
 .hero__index_section {
   color: #002b38; }
@@ -583,22 +620,13 @@ nav li {
       .hero__index_section .hero-content .logo {
         height: 60px;
         width: 240px; } }
-  .hero__index_section .date {
-    color: white;
-    font-weight: 500;
-    font-size: 3.75em; }
-    @media (max-width: 767px) {
-      .hero__index_section .date {
-        font-size: 2.75em; } }
-  .hero__index_section .city {
-    font-weight: 700;
-    font-size: 6em; }
-    @media (max-width: 767px) {
-      .hero__index_section .city {
-        font-size: 4em; } }
+  .hero__index_section .hero-text {
+    padding-top: 5em; }
+    .hero__index_section .hero-text .city {
+      text-shadow: none; }
   .hero__index_section .hashtag {
     font-weight: 700;
-    font-size: 1.5em; }
+    font-size: 1.2em; }
     .hero__index_section .hashtag .arrow-down img {
       filter: brightness(100);
       width: 3rem;
@@ -609,33 +637,35 @@ nav li {
       animation: callToAction 3.5s linear 0s infinite; }
       @media (max-width: 767px) {
         .hero__index_section .hashtag .arrow-down a {
-          margin-left: -40px;
           bottom: 50px; } }
     @media (max-width: 767px) {
       .hero__index_section .hashtag {
         font-size: 1em; } }
 
 .speakers__index_section {
-  background-color: #002b38; }
-
-.speakers__index_section h3 {
-  color: #1bacb1; }
-
-.speakers__index_section .speaker {
-  color: #1bacb1;
-  background-color: white;
-  margin: 0 1rem 1rem 1rem;
-  padding: 0.8rem 2rem 0.8rem 2rem; }
-  .speakers__index_section .speaker h4 {
-    font-size: 1rem; }
-  .speakers__index_section .speaker h5 {
-    font-size: 0.8rem; }
-  .speakers__index_section .speaker img {
-    max-height: 250px;
-    max-width: 250px;
-    padding-bottom: 0.5rem; }
+  color: white; }
+  .speakers__index_section {
+    background-color: #002b38; }
+  .speakers__index_section h3 {
+    color: #1bacb1; }
+  .speakers__index_section .speaker {
+    color: #1bacb1;
+    background-color: white;
+    margin: 0 1rem 1rem 1rem;
+    padding: 0.8rem 2rem 0.8rem 2rem; }
+    .speakers__index_section .speaker h4 {
+      font-size: 1rem; }
+    .speakers__index_section .speaker h5 {
+      font-size: 0.8rem; }
+    .speakers__index_section .speaker img {
+      max-height: 250px;
+      max-width: 250px;
+      padding-bottom: 0.5rem; }
 
 .registration__index_section {
+  color: #002b38; }
+
+.registration__index_section h3 {
   color: #002b38; }
 
 .registration__index_section .btn {
@@ -649,9 +679,10 @@ nav li {
   color: white;
   background-color: #002b38;
   z-index: -1; }
-  .registration__index_section .ideas hr {
-    background-color: white;
-    margin-top: 0.2rem !important; }
+  .registration__index_section .ideas .claim {
+    margin-bottom: 0.4rem; }
+    .registration__index_section .ideas .claim span {
+      border-bottom: 1px solid white; }
   @media (min-width: 767px) {
     .registration__index_section .ideas {
       min-height: 25em; } }
@@ -688,6 +719,8 @@ nav li {
     @media (min-width: 767px) {
       .location__index_section {
         min-height: 80%; } }
+  .location__index_section h3 {
+    color: white; }
   .location__index_section .address {
     background-color: #002b38; }
     @media (min-width: 767px) {
@@ -712,8 +745,8 @@ nav li {
 
 .partners__index_section img {
   margin: 0.6rem 2rem;
-  max-height: 100px;
-  max-width: 200px;
+  max-height: 80px;
+  max-width: 150px;
   -webkit-filter: grayscale(1);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(1); }
