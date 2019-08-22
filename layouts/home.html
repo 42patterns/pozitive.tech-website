@@ -193,9 +193,9 @@
                             <div class="media">
                             {{ with .Site.GetPage "page" "partners" }}
                                 <div class="community">                                        
-                                    <h4>Communities</h4>
+                                    <h4>Media & Communities</h4>
                                     <div class="d-flex flex-wrap align-items-center justify-content-center">
-                                    {{ range .Resources.Match "community/*" }}
+                                    {{ range sort (.Resources.Match "community/*") "Name" "desc" }}
                                         {{ if .Params.url }}
                                             <a href="{{ .Params.url }}" target="_blank"><img src="{{ .RelPermalink }}"></a>
                                         {{ else }}
