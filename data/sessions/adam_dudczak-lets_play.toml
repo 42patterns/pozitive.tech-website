@@ -1,0 +1,12 @@
+title = "Let's play!"
+language = "en"
+abstract = "ML and AI technologies are a great tool to automate various business processes. In this short presentation I will try to automate something significant, something which usually takes long hours, may ruin health, lead to sleep deprivation, may even break up families... we will try to teach computers play games so we won't have to. How to translate game play problem into language of ML algorithms? I will explore possible solutions from the simplest manually crafted algorithm through classical supervised learning methods to end up with reinforcement learning based approaches. This presentation may contain asteroids, spaceships, laser guns and a significant portion of poor Python code."
+track = ""
+tags = ["ai", "gaming", "search", "programming languages"]
+
+[[speakers]]
+name = "Adam Dudczak"
+role = "Search Team Manager"
+company = "Allegro"
+bio = "Search Team manager in allegro.pl, on a daily basis I work on improving search experience in the biggest ecommerce site in Poland. I am professionally involved with Java and related technologies since 2004, currently focused on search and information retrieval. Organizer of GeeCON conference (http://geecon.org) and former leader of Poznan Java User Group (http://www.jug.poznan.pl)."
+photo = "adam_dudczak.png"

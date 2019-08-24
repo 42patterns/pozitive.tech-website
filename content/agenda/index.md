@@ -39,7 +39,7 @@ agenda:
             - pierluigi_casale-data_and_ai
         - "14:30 - 15:00":
             - michal_kowalski-distributed_arch
-            - TBA
+            - adam_dudczak-lets_play
         - "15:00 - 15:15":
             - Coffee break
         - "15:15 - 15:45":
