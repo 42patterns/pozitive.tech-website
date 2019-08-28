@@ -51,5 +51,5 @@ agenda:
         - "16:15 - 16:30":
             - Coffee break
         - "16:30 - 17:30":
-            - katharine_jarmul
+            - katharine_jarmul-hate_abuse_misinformation
 ---

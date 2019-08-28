@@ -1,0 +1,12 @@
+title = "Identifying Hate, Abuse and Misinformation Online"
+language = "en"
+abstract = "Can AI help us identify hate, abuse and misinformation online? If not, when might we be able to do so, if ever? Will AI actually just help us spread more misinformation and hate online? In this talk, we'll dive into some of the cutting edge research on hate-speech detection, bot army analysis and fake news. We'll explore what works, doesn't work and what may not be possible with current approaches alone. To conclude, we'll focus on what areas might be underserved and how every technologist can help fight these forms of hatred and deception online."
+track = "keynote"
+tags = ["artifical intelligence", "privacy", "fake news", "keynote"]
+
+[[speakers]]
+name = "Katharine Jarmul"
+role = "Privacy Advocate"
+company = ""
+bio = """Katharine Jarmul is a privacy advocate, AI skeptic and machine learning engineer. She is passionate about demystifying concepts like "AI" and machine learning and is concerned about the current security and privacy practices in the field. Since 2014, she runs a consulting and advisory company based in Berlin, working on machine learning and data engineering with a focus on natural language processing. She also helped found KIProtect, a company working on new encryption methods for machine learning tasks."""
+photo = "katharine_jarmul.jpg"
