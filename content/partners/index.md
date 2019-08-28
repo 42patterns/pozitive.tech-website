@@ -6,5 +6,21 @@ resources:
         url: "http://www.outsourcingportal.eu/pl/"
     - src: "community/wyborcza.png"
       params: 
-        url: "http://poznan.wyborcza.pl/"        
+        url: "http://poznan.wyborcza.pl/"     
+    - src: "community/just-join-it.png"
+      params: 
+        url: "http://justjoin.it/"     
+    - src: "community/Nofluffjobs.png"
+      params: 
+        url: "https://nofluffjobs.com"     
+    - src: "community/magazyn-programista.jpg"
+      params: 
+        url: "https://programistamag.pl/"     
+    - src: "community/adg-poznan.png"
+      params: 
+        url: "https://www.meetup.com/pl-PL/Poznan-Android-Developer-Group/"     
+    - src: "community/porozmawiajmy-o-it.png"
+      params: 
+        url: "https://porozmawiajmyoit.pl/"     
+         
 ---
