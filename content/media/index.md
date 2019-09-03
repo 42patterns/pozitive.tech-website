@@ -11,7 +11,7 @@ Zasady współpracy medialnej:
 * [Partnerstwo medialne](/media/files/partnerstwo-medialne-pozitive-tech.pdf)
 * [Zasady akredytacji dziennikarskiej](/media/files/zasady-akredytacji-dziennikarskiej-pozitive-tech.pdf)
 
-Materiały social media:
+Materiały prasowe:
 
 * [Komunikat prasowy - agenda](/media/files/pozitive-technologies-komunikat-prasowy-agenda.pdf)
 * [Notatka prasowa](/media/files/pozitive-technologies-notatka-prasowa.docx)
