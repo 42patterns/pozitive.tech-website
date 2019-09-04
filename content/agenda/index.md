@@ -52,4 +52,7 @@ agenda:
             - Coffee break
         - "17:00 - 17:45":
             - katharine_jarmul-hate_abuse_misinformation
+        - "20:00 - 24:00":
+            - '<img src="/partners/CW_Logo_Color.png" alt="Logo Cushman & Wakefield" style="max-height: 50px; padding-left: 10px">
+            <div style="float: left">After-party sponsored by <br />Cushman & Wakefield</div>'
 ---
