@@ -450,10 +450,9 @@ nav li {
     color: #1bacb1; }
   .footer__section hr {
     background-color: white; }
-  .footer__section .social img {
-    filter: brightness(100);
-    width: 2rem;
-    height: 2rem; }
+  .footer__section .social i {
+    color: white;
+    margin: 0.2em; }
 
 .top-section {
   position: relative;
