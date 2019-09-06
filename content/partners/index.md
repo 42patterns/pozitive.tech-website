@@ -22,10 +22,10 @@ resources:
     - src: "community/porozmawiajmy-o-it.png"
       params: 
         url: "https://porozmawiajmyoit.pl/"     
-    - src: "community/programista-na-swoim.png"
+    - src: "community/codecouple.png"
       params: 
         url: "https://codecouple.pl/"     
     - src: "community/programista-na-swoim.png"
       params: 
-        url: "https://programistanaswoim.pl/"                      
+        url: "https://programistanaswoim.pl/"
 ---
