@@ -4,7 +4,7 @@ resources:
     - src: "community/Outsourcing_Portal.png"
       params: 
         url: "http://www.outsourcingportal.eu/pl/"
-    - src: "community/wyborcza.png"
+    - src: "community/wyborcza.jpg"
       params: 
         url: "http://poznan.wyborcza.pl/"     
     - src: "community/just-join-it.png"
