@@ -40,4 +40,10 @@ resources:
     - src: "community/dailyweb.png"
       params:
         url: "https://dailyweb.pl/"
+    - src: "community/emaus-radio.png"
+      params:
+        url: "http://www.radioemaus.pl/"
+    - src: "community/poradnik-przedsiebiorcy.png"
+      params:
+        url: "https://poradnikprzedsiebiorcy.pl/"
 ---
