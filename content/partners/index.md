@@ -31,4 +31,13 @@ resources:
     - src: "community/webroad.png"
       params:
         url: "https://webroad.pl"
+    - src: "community/gopoznan.png"
+      params:
+        url: "https://gopoznan.pl/"
+    - src: "community/nasz-glos-poznanski.png"
+      params:
+        url: "http://naszglospoznanski.pl/"
+    - src: "community/dailyweb.png"
+      params:
+        url: "https://dailyweb.pl/"
 ---
