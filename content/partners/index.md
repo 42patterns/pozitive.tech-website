@@ -28,4 +28,7 @@ resources:
     - src: "community/programista-na-swoim.png"
       params: 
         url: "https://programistanaswoim.pl/"
+    - src: "community/webroad.png"
+      params:
+        url: "https://webroad.pl"
 ---
