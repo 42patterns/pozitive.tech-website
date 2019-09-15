@@ -53,6 +53,5 @@ agenda:
         - "17:00 - 17:45":
             - katharine_jarmul-hate_abuse_misinformation
         - "20:00 - 24:00":
-            - '<img src="/partners/CW_Logo_Color.png" alt="Logo Cushman & Wakefield" style="max-height: 50px; padding-left: 10px">
-            <div style="float: left">After-party sponsored by <br />Cushman & Wakefield</div>'
+            - '<div class="d-flex flex-column flex-md-row"><div>After-party sponsored by <br />Cushman & Wakefield</div><div><img src="/partners/CW_Logo_Color.png" alt="Logo Cushman & Wakefield" style="max-height: 50px; padding-left: 10px"></div></div><div style="color: #002b38"><strong>Ministerstwo Browaru</strong> - <a href="https://www.facebook.com/ministerstwobrowaruwroniecka/" target="_blank">ul. Wroniecka 16</a></div>'
 ---
