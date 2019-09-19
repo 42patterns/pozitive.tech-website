@@ -13,6 +13,7 @@ Zasady współpracy medialnej:
 
 Materiały prasowe:
 
+* [Komunikat prasowy - konferencja już w najbliższy czwartek](/media/files/pozitive-technologies-komunikat-prasowy-tydzien.pdf)
 * [Komunikat prasowy - agenda](/media/files/pozitive-technologies-komunikat-prasowy-agenda.pdf)
 * [Notatka prasowa](/media/files/pozitive-technologies-notatka-prasowa.docx)
 * [Materiał do social media dla partnerów](/media/files/pozitive-technologies-material-social-media-dla-partnerow.docx)
