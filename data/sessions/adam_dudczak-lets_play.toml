@@ -1,5 +1,5 @@
 title = "Let's play!"
-language = "en"
+language = "pl"
 abstract = "ML and AI technologies are a great tool to automate various business processes. In this short presentation I will try to automate something significant, something which usually takes long hours, may ruin health, lead to sleep deprivation, may even break up families... we will try to teach computers play games so we won't have to. How to translate game play problem into language of ML algorithms? I will explore possible solutions from the simplest manually crafted algorithm through classical supervised learning methods to end up with reinforcement learning based approaches. This presentation may contain asteroids, spaceships, laser guns and a significant portion of poor Python code."
 track = ""
 tags = ["ai", "gaming", "search", "programming languages"]
