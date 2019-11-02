@@ -4,6 +4,9 @@ abstract = "In the 21st century organisations are required to operate in a world
 track = ""
 tags = ["security", "threat intelligence"]
 
+[links]
+youtube = "ZkIvb9p4WMg"
+
 [opengraph]
 fb = "grzegorz_nowaczyk-og.png"
 twitter = "grzegorz_nowaczyk-og-sq.png"

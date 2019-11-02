@@ -4,6 +4,9 @@ abstract = "Can AI help us identify hate, abuse and misinformation online? If no
 track = "keynote"
 tags = ["artifical intelligence", "privacy", "fake news", "keynote"]
 
+[links]
+youtube = "y4DSfpZ_Y2M"
+
 [opengraph]
 fb = "katharine_jarmul-og.png"
 twitter = "katharine_jarmul-og-sq.png"

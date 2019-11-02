@@ -4,6 +4,9 @@ abstract = "Programming consists in translating some form of user's intent into 
 track = "keynote"
 tags = ["artifical intelligence", "keynote"]
 
+[links]
+youtube = "e5PgHQ0Shww"
+
 [opengraph]
 fb = "krzysztof_krawiec-og.png"
 twitter = "krzysztof_krawiec-og-sq.png"

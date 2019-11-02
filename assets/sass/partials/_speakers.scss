@@ -36,6 +36,11 @@
                 font-size: 0.9em;
                 color: $color-content;            
             }    
+
+            .video {
+                margin: 1em auto;
+                text-align: center;
+            }
         }
     }
 
@@ -123,10 +128,17 @@
 
             h5 {
                 border-left: 2px solid $color-main;
-                color: $color-secondary;
                 font-size: 0.9em;
                 padding-left: 0.6em;
                 margin-bottom: 0;
+
+                a {
+                    color: $color-secondary;
+                }
+
+                a.youtube {
+                    color: $color-main;
+                }
             }
         }
 

@@ -4,6 +4,9 @@ abstract = "Have you ever tried to cook? For preparing a good meal you need ingr
 track = ""
 tags = ["data science" , "artifical intelligence"]
 
+[links]
+youtube = "st0h707Cu9Y"
+
 [opengraph]
 fb = "pierluigi_casale-og.png"
 twitter = "pierluigi_casale-og-sq.png"

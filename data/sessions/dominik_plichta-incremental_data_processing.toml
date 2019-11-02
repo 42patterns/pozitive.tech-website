@@ -7,6 +7,9 @@ This talk takes a look at design choices and looks at how certain data structure
 track = ""
 tags = ["architecture", "data"]
 
+[links]
+youtube = "U0mfMRxwXS8"
+
 [opengraph]
 fb = "dominik_plichta-og.png"
 twitter = "dominik_plichta-og-sq.png"

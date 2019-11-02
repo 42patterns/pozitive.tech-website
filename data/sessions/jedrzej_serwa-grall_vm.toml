@@ -4,6 +4,9 @@ abstract = "Recently we have witnessed a small expansion of virtual machines in 
 track = ""
 tags = ["performance", "graalvm", "programing languages", "jvm"]
 
+[links]
+youtube = "O8C27sQeWzI"
+
 [opengraph]
 fb = "jedrzej_serwa-og.png"
 twitter = "jedrzej_serwa-og-sq.png"

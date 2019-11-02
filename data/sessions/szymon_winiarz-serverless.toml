@@ -4,6 +4,9 @@ abstract = """In my presentation I'd like to talk about a topic being "the hotte
 track = ""
 tags = ["serverless", "cloud"]
 
+[links]
+youtube = "edK41P9u0l4"
+
 [opengraph]
 fb = "szymon_winiarz-og.png"
 twitter = "szymon_winiarz-og-sq.png"

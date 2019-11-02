@@ -4,6 +4,9 @@ abstract = "Robotic Process Automation (RPA) is one of the most effective and tr
 track = ""
 tags = ["artificial intelligence", "robotics"]
 
+[links]
+youtube = "1g0fQQzgE6U"
+
 [opengraph]
 fb = "pawel_satalecki-og.png"
 twitter = "pawel_satalecki-og-sq.png"

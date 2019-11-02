@@ -3,6 +3,9 @@
     <div class="title">
     {{ $filePath := printf "/sessions/%s.html" (.session.title | replaceRE "[ęóąśłżźćń]" "" | urlize) }}
     <a  href="{{ $filePath }}">{{ .session.title }}</a>
+    {{ if .session.links.youtube }}
+        <i class="fa fa-youtube-play"></i>
+    {{ end }}
     </div>
     <div class="tags">
         {{ range .session.tags }}
@@ -20,6 +23,9 @@
     <div class="collapse multi-collapse-{{.agendaTitle}}" id="{{ .agendaTitle }}">
         <div class="abstract card card-body">
             {{ .session.abstract }}
+            {{ if .session.links.youtube }}
+                <div class="video"><iframe {{if in .session.tags "keynote"}} width="640" height="360" {{else}} width="320" height="180" {{end}} src="https://www.youtube.com/embed/{{.session.links.youtube}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            {{ end }}
         </div>
     </div>
     {{ end }}

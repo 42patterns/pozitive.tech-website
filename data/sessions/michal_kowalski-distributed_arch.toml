@@ -4,6 +4,9 @@ abstract = " We are surrounded by fancy, highly popular architecture concepts li
 track = ""
 tags = ["architecture", "microservices"]
 
+[links]
+youtube = "P047IrgK960"
+
 [opengraph]
 fb = "michal_kowalski-og.png"
 twitter = "michal_kowalski-og-sq.png"

@@ -4,6 +4,9 @@ abstract = """Reactive programming is getting more popular recently. Especially 
 track = ""
 tags = ["architecture"]
 
+[links]
+youtube = "k4gn3lgL4HA"
+
 [opengraph]
 fb = "michal_jawulski-og.png"
 twitter = "michal_jawulski-og-sq.png"

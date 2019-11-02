@@ -4,10 +4,12 @@ abstract = "The classic way to develop IT solutions is based on the concept of f
 track = ""
 tags = ["agile", "quality", "machine learning"]
 
+[links]
+youtube = "3HRsCjiCU6w"
+
 [opengraph]
 fb = "willy_picard-og.png"
 twitter = "willy_picard-og-sq.png"
-
 
 [[speakers]]
 name = "Willy Picard"

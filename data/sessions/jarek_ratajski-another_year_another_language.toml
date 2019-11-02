@@ -4,6 +4,9 @@ abstract = "No matter what language and which framework You use now, there is a 
 track = ""
 tags = ["architecture", "programming languages"]
 
+[links]
+youtube = "Hcl7eAQOQq0"
+
 [opengraph]
 fb = "jaroslaw_ratajski-og.png"
 twitter = "jaroslaw_ratajski-og-sq.png"

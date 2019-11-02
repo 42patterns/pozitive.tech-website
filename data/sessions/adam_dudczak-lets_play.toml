@@ -4,6 +4,9 @@ abstract = "ML and AI technologies are a great tool to automate various business
 track = ""
 tags = ["ai", "gaming", "search", "programming languages"]
 
+[links]
+youtube = "3zOv3kFWnYc"
+
 [opengraph]
 fb = "adam_dudczak-og.png"
 twitter = "adam_dudczak-og-sq.png"

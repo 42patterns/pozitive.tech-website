@@ -4,6 +4,8 @@ abstract = "There seems to be a lot of confusion and disinformation about what s
 track = ""
 tags = ["security", "architecture"]
 
+[links]
+youtube = "bMMKxgiKKxM"
 
 [opengraph]
 fb = "marek_puchalski-og.png"

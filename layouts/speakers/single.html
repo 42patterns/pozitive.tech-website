@@ -37,9 +37,16 @@
                                             </span>
                                         </div>        
                                     </div>
-                                    {{ with $session.title }}
+                                    {{ if $session.title }}
                                     <div class="session d-none d-md-block">
-                                        <a href="{{ $speaker_page.RelPermalink }}"><h5>{{ . }}</h5></a>
+                                        <h5>
+                                            <a href="{{ $speaker_page.RelPermalink }}">{{ $session.title }}</a>                                        
+                                            {{ if $session.links.youtube }}
+                                            <a href="https://www.youtube.com/watch?v={{$session.links.youtube}}" class="youtube" target=_blank>
+                                                <i class="fa fa-youtube-play"></i>
+                                            </a>
+                                            {{ end }}
+                                        </h5>
                                     </div>
                                     {{ end }}
                                     <div class="tags d-none d-md-block">
