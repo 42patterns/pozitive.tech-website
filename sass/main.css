@@ -509,6 +509,9 @@ nav li {
       margin-top: 1em;
       font-size: 0.9em;
       color: #616161; }
+    .session__section .session .description .video {
+      margin: 1em auto;
+      text-align: center; }
   .session__section .speakers {
     color: #616161; }
     @media (min-width: 767px) {
@@ -558,10 +561,13 @@ nav li {
       padding-bottom: 0.3em; }
       .speakers__section .speaker .session h5 {
         border-left: 2px solid #1bacb1;
-        color: #002b38;
         font-size: 0.9em;
         padding-left: 0.6em;
         margin-bottom: 0; }
+        .speakers__section .speaker .session h5 a {
+          color: #002b38; }
+        .speakers__section .speaker .session h5 a.youtube {
+          color: #1bacb1; }
     .speakers__section .speaker .tags span {
       font-size: 0.8em; }
 
@@ -597,6 +603,9 @@ nav li {
       .agenda__section .row .agenda-element .abstract {
         color: #616161;
         font-size: small; }
+      .agenda__section .row .agenda-element .video {
+        margin-top: 1em;
+        text-align: center; }
 
 .hero__index_section {
   color: #002b38; }
