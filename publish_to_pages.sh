@@ -9,6 +9,7 @@ fi
 echo "Deleting old publication"
 rm -rf public
 mkdir public
+chown 1000:1000 public
 git worktree prune
 rm -rf .git/worktrees/public/
 
