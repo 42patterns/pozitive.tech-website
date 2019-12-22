@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+{{ $baseUrl := .Site.BaseURL }}
+<section id="gallery" class="gallery__section">
+    <div class="container text-center">
+        <h1>{{ .Title }}</h1>
+
+        <div class="photoset -square -portrait"> 
+            <!--Can also do portrait or square, remove the "-" prefix-->
+            <!--Add or remove some of these-->
+            {{ range sort (.Resources.Match "images/*") }}
+                <a href="{{ .RelPermalink }}" target="_blank" class="photo" style="background-image:url({{ .RelPermalink }})" ></a>
+            {{ end }}
+         </div>
+
+         <!--
+         Default tumblr photosets either output each on a new row or use JavaScript
+         With this you lose a tiny bit of freedom of custom fitting (unless you like more orderly aspect ratios then it's a gain) but you (also) gain it sorting itself out instantly,
+         -->
+
+    </div>
+</section>
+{{ end }}
