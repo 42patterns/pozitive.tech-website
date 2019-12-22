@@ -9,7 +9,7 @@
             <!--Can also do portrait or square, remove the "-" prefix-->
             <!--Add or remove some of these-->
             {{ range sort (.Resources.Match "images/*") }}
-                <a href="{{ .RelPermalink }}" target="_blank" class="photo" style="background-image:url({{ .RelPermalink }})" ></a>
+                <a href="{{ .RelPermalink }}" data-lightbox="pozitive2019-gallery" class="photo" style="background-image:url({{ .RelPermalink }})" ></a>
             {{ end }}
          </div>
 
